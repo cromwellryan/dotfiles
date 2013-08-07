@@ -1,0 +1,77 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle goodness
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible " be iMproved
+filetype off     " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle 
+Bundle 'gmarik/vundle' 
+
+" My Bundles
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
+Bundle 'motemen/git-vim'
+Bundle 'vim-scripts/ZoomWin'
+ 
+filetype plugin indent on
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Text, tabs and indentation
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
+
+set ai "Auto indent
+set si "Smart indent
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+" highlight current line
+set cursorline
+
+" make searches case-sensitive only if they contain upper-case characters
+set ignorecase smartcase
+
+nmap <silent> <C-N> :NERDTreeToggle<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Buffers
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> <C-B> :bn<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Windows
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fast moving between windows
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
+" Fast window resizing with +/- keys (horizontal); / and * keys (vertical)
+if bufwinnr(1)
+  map <k2> <C-W>+
+  map <k8> <C-W>-
+  map <k4> <c-w><
+  map <k6> <c-w>>
+endif
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Misc
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap % v% " Jump to matching object and visual select stuff between
+
+set nu " Line numbers
+set hlsearch " Highlight search matches
+
+"nnoremap : q:i
+"nnoremap / q/i
+"nnoremap ? q?i
