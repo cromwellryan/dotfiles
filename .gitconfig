@@ -1,0 +1,20 @@
+[user]
+	name = Ryan Cromwell
+	email = ryan@echelontouch.com
+[github]
+	user = cromwellryan
+	token = 7cccf74d614c5247a99fa2c22ab896fd
+[alias]
+	st = status
+	co = checkout
+	cm = commit
+	cia = commit --amend -C HEAD
+	a = add -p .
+	b = branch
+	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+  po = push origin master
+	hist = log -n 10 --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+[core]
+	excludesfile = ~/git-config/.gitignore
+	editor = /usr/bin/vim
