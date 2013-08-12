@@ -1,0 +1,1 @@
+IEx.Options.set :inspect, limit: 10
