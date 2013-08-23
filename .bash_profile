@@ -14,3 +14,11 @@ function mcd() {
   mkdir $1
   cd $1
 }
+
+function wreck() {
+  pushd .
+
+  WRECKDIR=`mktemp -d /tmp/wreckXXXXXXXXX` && { 
+    cd $WRECKDIR
+  }
+}
