@@ -22,7 +22,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-rails'
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'pangloss/vim-erlang.git'
+Bundle 'pangloss/vim-erlang'
 Bundle 'bling/vim-airline'
  
 filetype plugin indent on
