@@ -15,6 +15,15 @@ function mcd() {
   cd $1
 }
 
+function cpath() {
+  pwd | pbcopy
+}
+
+
+function updatepow() {
+  curl get.pow.cx | sh
+}
+
 function wreck() {
   pushd .
 
