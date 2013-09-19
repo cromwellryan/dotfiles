@@ -19,6 +19,10 @@ function cpath() {
   pwd | pbcopy
 }
 
+function cdl() { 
+  cd $1
+  ls
+}
 
 function updatepow() {
   curl get.pow.cx | sh
