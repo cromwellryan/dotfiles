@@ -18,3 +18,5 @@
 [core]
 	excludesfile = ~/git-config/.gitignore
 	editor = /usr/bin/vim
+[credential]
+	helper = cache
