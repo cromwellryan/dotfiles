@@ -24,6 +24,10 @@ Bundle 'tpope/vim-rails'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'pangloss/vim-erlang'
 Bundle 'bling/vim-airline'
+
+" Dash integration
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
  
 filetype plugin indent on
 
@@ -74,6 +78,11 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap <leader>k <esc>:'<,'>=G<CR> " Make this perty
 map <leader>k =G<CR> " Make it all perty
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Learnin'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>? <esc>:Dash<CR> " Dash to the rescue
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
