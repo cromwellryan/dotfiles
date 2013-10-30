@@ -20,10 +20,11 @@ Bundle 'vim-scripts/ZoomWin'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-rails'
-Bundle 'elixir-lang/vim-elixir'
 Bundle 'pangloss/vim-erlang'
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-rails'
+Bundle 'wincent/Command-T'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
