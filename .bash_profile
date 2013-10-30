@@ -14,6 +14,10 @@ alias gs="git status"
 export NODE_PATH="/usr/local/lib/node_modules"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+#Git-Svn is sad about perl moving in xcode
+export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level"
+
+
 ##############
 # term stuff
 ##############
