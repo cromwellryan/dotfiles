@@ -85,6 +85,11 @@ map <leader>? <esc>:Dash<CR> " Dash to the rescue
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Happy viming
+:command W w
+:command Wq wq
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap % v% " Jump to matching object and visual select stuff between
