@@ -1,36 +1,16 @@
-
-
-##############
-# $PATH
-##############
-
-PATH=\
-
-## Customize to your needs...
-for dir in \
-  /usr/local/bin \
-  /usr/local/sbin \
-  /usr/local/share/npm/bin \
-  /usr/bin \
-  /bin \
-  /usr/sbin \
-  /sbin \
-  /usr/git-tf \
-; do
-  if [[ -d $dir ]]; then PATH+=:$dir fi
-done
-
-export PATH
-
-
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/share/npm/bin
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/bin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/sbin
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 alias updatepow="curl get.pow.cx | sh"
 alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p 7488"
 alias pg-start="postgres -D /usr/local/var/postgres"
 
-##############
-# Git
-##############
 alias ga="git add -p"
 alias gc="git commit"
 alias gs="git status"
@@ -65,3 +45,4 @@ function wreck() {
     cd $WRECKDIR
   }
 }
+
