@@ -73,6 +73,14 @@ if bufwinnr(1)
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" No 'Press Any Key to Contiue BS'
+" from: http://vim.wikia.com/wiki/Avoiding_the_%22Hit_ENTER_to_continue%22_prompts
+command! -nargs=1 SilentCmd
+\ | execute ':silent !'.<q-args>
+\ | execute ':redraw!'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Refluxoring
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap <leader>k <esc>:'<,'>=G<CR> " Make this perty
@@ -86,8 +94,15 @@ map <leader>? <esc>:Dash<CR> " Dash to the rescue
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Happy viming
-:command W w
-:command Wq wq
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+command W w
+command Wq wq
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Happy rails
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Restart Pow.cx for the Current App
+command! PowRestart :SilentCmd touch tmp/restart.txt; touch tmp/.livereload.rb
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
