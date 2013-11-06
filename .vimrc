@@ -12,8 +12,8 @@ filetype off     " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Let Vundle manage Vundle 
-Bundle 'gmarik/vundle' 
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
 
 " My Bundles
 Bundle 'scrooloose/nerdtree'
@@ -32,7 +32,7 @@ Bundle 'kien/ctrlp.vim'
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
- 
+
 filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
