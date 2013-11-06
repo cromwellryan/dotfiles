@@ -27,7 +27,7 @@ Bundle 'pangloss/vim-erlang'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
-Bundle 'wincent/Command-T'
+Bundle 'kien/ctrlp.vim'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
