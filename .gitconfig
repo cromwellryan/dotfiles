@@ -16,7 +16,9 @@
 	hist = log -n 10 --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
 [core]
-	excludesfile = ~/git-config/.gitignore
+	excludesfile = /Users/ryan/.gitignore_global
 	editor = /usr/bin/vim
 [credential]
 	helper = cache
+[init]
+	templatedir = ~/.git_template

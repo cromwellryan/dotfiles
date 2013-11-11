@@ -7,6 +7,7 @@ export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+alias ctags="`brew --prefix`/bin/ctags"
 alias updatepow="curl get.pow.cx | sh"
 alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p 7488"
 alias pg-start="postgres -D /usr/local/var/postgres"
