@@ -75,6 +75,8 @@ if bufwinnr(1)
   map <k6> <c-w>>
 endif
 
+map <leader>q <esc>:copen<CR> " Open quick fix
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " No 'Press Any Key to Contiue BS'
 " from: http://vim.wikia.com/wiki/Avoiding_the_%22Hit_ENTER_to_continue%22_prompts
