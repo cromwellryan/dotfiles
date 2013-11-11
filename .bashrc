@@ -1,7 +1,7 @@
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/share/npm/bin
-export PATH=$PATH:/usr/bin
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
@@ -46,3 +46,4 @@ function wreck() {
   }
 }
 
+export PATH=/usr/local/bin:$PATH
