@@ -1,8 +1,17 @@
 " quick leader
 let mapleader = ","
 
-" 256 colors
-set t_Co=256
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" UI
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set noshowmode          " Airline gives mode
+if $TERM =~ "-256color"
+  set t_Co=256
+end
+
+if exists('+colorcolumn')
+    set colorcolumn=80
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle goodness
@@ -33,11 +42,10 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 
-filetype plugin indent on
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tabs and indentation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin indent on
 set tabstop=2 shiftwidth=2 " tabs rendered as 2 spaces
 set expandtab " expand tabs to spaces (should this be filemode dependent?
 
@@ -51,31 +59,19 @@ set noswapfile
 " make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
 
-nmap <silent> <C-N> :NERDTreeToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Buffers
+" Buffers & Windows
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <silent> <C-B> :bn<CR>
+nmap <silent> <C-B> :bn<CR>             " next buffer
+nmap <silent> <C-N> :NERDTreeToggle<CR> " show/hide nerdtree 
+map <leader>q <esc>:copen<CR>           " Open quick fix
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Windows
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fast moving between windows
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
-
-" Fast window resizing with +/- keys (horizontal); / and * keys (vertical)
-if bufwinnr(1)
-  map <k2> <C-W>+
-  map <k8> <C-W>-
-  map <k4> <c-w><
-  map <k6> <c-w>>
-endif
-
-map <leader>q <esc>:copen<CR> " Open quick fix
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " No 'Press Any Key to Contiue BS'
@@ -95,7 +91,6 @@ map <leader>k =G<CR> " Make it all perty
 " Learnin'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>? <esc>:Dash<CR> " Dash to the rescue
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Happy viming
