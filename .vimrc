@@ -66,7 +66,7 @@ set ignorecase smartcase
 " Buffers & Windows
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <silent> <C-B> :bn<CR>             " next buffer
-nmap <silent> <C-N> :NERDTreeToggle<CR> " show/hide nerdtree 
+nmap <silent> <C-N> :NERDTreeToggle<CR> " show/hide nerdtree
 map <leader>q <esc>:copen<CR>           " Open quick fix
 
 " Fast moving between windows
@@ -117,7 +117,7 @@ function! QuickfixToggle()
   if g:quickfix_is_open
     cclose
     let g:quickfix_is_open = 0
-  else 
+  else
     copen
     let g:quickfix_is_open = 1
   endif
