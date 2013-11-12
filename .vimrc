@@ -5,6 +5,7 @@ let mapleader = ","
 " UI
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set noshowmode          " Airline gives mode
+set background=light
 if $TERM =~ "-256color"
   set t_Co=256
 end
@@ -36,11 +37,13 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 
+colorscheme solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tabs and indentation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
