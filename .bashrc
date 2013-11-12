@@ -14,6 +14,7 @@ alias pg-start="postgres -D /usr/local/var/postgres"
 
 alias gc="git commit"
 alias gs="git status"
+alias gcp="git cherry-pick
 
 export NODE_PATH="/usr/local/lib/node_modules"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
