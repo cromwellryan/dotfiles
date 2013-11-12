@@ -113,6 +113,7 @@ command! PowRestart :SilentCmd touch tmp/restart.txt; touch tmp/.livereload.rb
 " Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap % v% " Jump to matching object and visual select stuff between
+command NF :NERDTreeFind
 
 nnoremap <leader>q :call QuickfixToggle()<cr>
 let g:quickfix_is_open = 0
