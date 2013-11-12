@@ -2,19 +2,6 @@
 let mapleader = ","
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" UI
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set noshowmode          " Airline gives mode
-set background=light
-if $TERM =~ "-256color"
-  set t_Co=256
-end
-
-if exists('+colorcolumn')
-    set colorcolumn=80
-endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle goodness
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible " be iMproved
@@ -43,7 +30,21 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" UI
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if $TERM =~ "-256color"
+  set t_Co=256
+end
+
+set noshowmode          " Airline gives mode
 colorscheme solarized
+set background=light
+
+if exists('+colorcolumn')
+    set colorcolumn=80
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tabs and indentation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
