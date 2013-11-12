@@ -12,19 +12,22 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-" My Bundles
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'lukaszb/vim-web-indent'
+" languages, syntax, ...
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-erlang'
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'bling/vim-airline'
+Bundle 'lukaszb/vim-web-indent'
+Bundle 'rstacruz/sparkup'
+
 Bundle 'tpope/vim-rails'
+
+" nav, ui, git, ...
+Bundle 'scrooloose/nerdtree'
+Bundle 'bling/vim-airline'
 Bundle 'kien/ctrlp.vim'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Bundle 'tpope/vim-fugitive'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
@@ -38,8 +41,7 @@ if $TERM =~ "-256color"
 end
 
 set noshowmode          " Airline gives mode
-colorscheme solarized
-set background=light
+colorscheme tomorrow-night " solarized
 
 if exists('+colorcolumn')
     set colorcolumn=80
