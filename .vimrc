@@ -27,7 +27,6 @@ Bundle 'gmarik/vundle'
 " My Bundles
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
-Bundle 'motemen/git-vim'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'scrooloose/syntastic'
