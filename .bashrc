@@ -11,16 +11,24 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias updatepow="curl get.pow.cx | sh"
 alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p 7488"
 alias pg-start="postgres -D /usr/local/var/postgres"
-
-alias gc="git commit"
-alias gs="git status"
-alias gcp="git cherry-pick
+alias ebash="vim ~/dotfiles/.bashrc"
+alias evim="vim ~/dotfiles/.vimrc"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 #Git-Svn is sad about perl moving in xcode
 export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level"
+
+##############
+# Git
+##############
+alias g='git'
+alias gap='git add -p'
+alias gco='git checkout'
+alias gc="git commit"
+alias gs="git status"
+alias gcp="git cherry-pick"
 
 
 ##############
