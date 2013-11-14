@@ -33,15 +33,16 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 
+filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if $TERM =~ "-256color"
-  set t_Co=256
-end
+set t_Co=256
+set noshowmode             " Airline gives mode
 
-set noshowmode          " Airline gives mode
-colorscheme tomorrow-night " solarized
+syntax enable
+set background=dark
+colorscheme Tomorrow-Night
 
 if exists('+colorcolumn')
     set colorcolumn=80
@@ -50,7 +51,6 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tabs and indentation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype plugin indent on
 set tabstop=2 shiftwidth=2 " tabs rendered as 2 spaces
 set expandtab " expand tabs to spaces (should this be filemode dependent?
 
@@ -141,7 +141,6 @@ nnoremap : q:i
 nnoremap / q/i
 nnoremap ? q?i
 
-syntax on
 
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
 map <leader>c :CoffeeCompile<CR>
