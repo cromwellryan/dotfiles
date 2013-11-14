@@ -64,6 +64,9 @@ set noswapfile
 " make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
 
+" add new lines without entering insert mode
+nnoremap go o<Esc>k
+nnoremap gO O<Esc>j
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffers & Windows
