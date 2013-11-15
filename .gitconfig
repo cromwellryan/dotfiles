@@ -22,3 +22,5 @@
 	helper = cache
 [init]
 	templatedir = ~/.git_template
+[push]
+	default = matching
