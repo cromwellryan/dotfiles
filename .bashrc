@@ -1,4 +1,3 @@
-export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/share/npm/bin
@@ -6,6 +5,9 @@ export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/local/bin:$PATH
+
+export NODE_PATH="/usr/local/lib/node_modules"
 
 alias ctags="`brew --prefix`/bin/ctags"
 alias updatepow="curl get.pow.cx | sh"
@@ -14,8 +16,6 @@ alias pg-start="postgres -D /usr/local/var/postgres"
 alias ebash="vim ~/dotfiles/.bashrc"
 alias evim="vim ~/dotfiles/.vimrc"
 
-export NODE_PATH="/usr/local/lib/node_modules"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 #Git-Svn is sad about perl moving in xcode
 export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level"
@@ -55,4 +55,4 @@ function wreck() {
   }
 }
 
-export PATH=/usr/local/bin:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
