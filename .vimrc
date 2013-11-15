@@ -103,6 +103,7 @@ command! -nargs=1 SilentCmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap <leader>k <esc>:'<,'>=G<CR> " Make this perty
 map <leader>k =G<CR> " Make it all perty
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Learnin'
