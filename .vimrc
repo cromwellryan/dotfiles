@@ -30,12 +30,21 @@ Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Bundle 'tpope/vim-fugitive'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 
 filetype plugin indent on
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" xolox/vim-easytags
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" use project specific ctags by default
+:set tags=./tags;
+:let g:easytags_dynamic_files = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mattn/gist-vim
