@@ -47,6 +47,10 @@ function cdl() {
   ls
 }
 
+function cdproj() {
+  cd ~/projects
+}
+
 function wreck() {
   pushd .
 
