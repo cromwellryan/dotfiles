@@ -15,13 +15,17 @@ alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p
 alias pg-start="postgres -D /usr/local/var/postgres"
 alias ebash="vim ~/dotfiles/.bashrc"
 alias evim="vim ~/dotfiles/.vimrc"
+alias v="vim"
+alias cpath="pwd | pbcopy"
+alias cproj="cd ~/projects"
+alias cdot="cd ~/dotfiles"
 
 #Git-Svn is sad about perl moving in xcode
 export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level"
 
-##############
+############################
 # Git
-##############
+############################
 alias g="git"
 alias gc="git commit"
 alias gap="git add -p"
@@ -32,11 +36,9 @@ alias gmv="git mv"
 alias grb="git rebase -i"
 alias gcp="git cherry-pick"
 
-##############
-# term stuff
-##############
-
-alias cpath="pwd | pbcopy"
+############################
+# Conveniences
+############################
 
 function mcd() {
   mkdir $1
@@ -48,10 +50,6 @@ function cdl() {
   ls
 }
 
-alias cproj="CDToProjectsDir"
-function CDToProjectsDir() {
-  cd ~/projects
-}
 
 function wreck() {
   pushd .

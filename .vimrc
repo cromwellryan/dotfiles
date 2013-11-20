@@ -33,6 +33,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
@@ -88,6 +89,8 @@ set ignorecase smartcase
 nnoremap go o<Esc>k
 nnoremap gO O<Esc>j
 
+" Indent Guides
+let g:indent_guides_enable_on_vim_startup = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffers & Windows
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
