@@ -32,7 +32,6 @@ alias gmv="git mv"
 alias grb="git rebase -i"
 alias gcp="git cherry-pick"
 
-
 ##############
 # term stuff
 ##############
@@ -49,7 +48,8 @@ function cdl() {
   ls
 }
 
-function cdproj() {
+alias cproj="CDToProjectsDir"
+function CDToProjectsDir() {
   cd ~/projects
 }
 

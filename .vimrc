@@ -20,6 +20,7 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'rstacruz/sparkup'
 
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-rails'
 
 " nav, ui, git, ...
