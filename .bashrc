@@ -16,18 +16,20 @@ alias pg-start="postgres -D /usr/local/var/postgres"
 alias ebash="vim ~/dotfiles/.bashrc"
 alias evim="vim ~/dotfiles/.vimrc"
 
-
 #Git-Svn is sad about perl moving in xcode
 export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level"
 
 ##############
 # Git
 ##############
-alias g='git'
-alias gap='git add -p'
-alias gco='git checkout'
+alias g="git"
 alias gc="git commit"
+alias gap="git add -p"
+alias gco="git checkout"
 alias gs="git status"
+alias gup="git-up"
+alias gmv="git mv"
+alias grb="git rebase -i"
 alias gcp="git cherry-pick"
 
 
@@ -58,5 +60,7 @@ function wreck() {
     cd $WRECKDIR
   }
 }
+
+export PATH=/usr/local/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
