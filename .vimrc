@@ -1,5 +1,7 @@
 " quick leader
 let mapleader = ","
+nnoremap ; :
+vnoremap ; :
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle goodness
@@ -203,11 +205,6 @@ endfunction
 set rnu " Relative Line numbers --- SEXXY!
 set hlsearch " Highlight search matches
 set laststatus=2
-
-" leaders with history
-nnoremap : q:i
-nnoremap / q/i
-nnoremap ? q?i
 
 
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
