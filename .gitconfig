@@ -17,7 +17,7 @@
 
 [core]
 	excludesfile = /Users/ryan/.gitignore_global
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
 [credential]
 	helper = cache
 [init]
