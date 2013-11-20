@@ -147,6 +147,35 @@ map <leader>? <esc>:Dash<CR> " Dash to the rescue
 :command! Q q
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Write Buffer if Necessary
+"
+" Writes the current buffer if it's needed, unless we're the in QuickFix mode.
+" Source: https://github.com/mutewinter/dot_vim/
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function WriteBufferIfNecessary()
+  if &modified && filewritable(expand('%')) && !&readonly
+    :write
+  endif
+endfunction
+command! WriteBufferIfNecessary call WriteBufferIfNecessary()
+
+function CRWriteIfNecessary()
+  if &filetype == "qf"
+    " Execute a normal enter when in Quickfix list.
+    execute "normal! \<enter>"
+  else
+    WriteBufferIfNecessary
+  endif
+endfunction
+
+" Clear the search buffer when hitting return
+" Idea for MapCR from http://git.io/pt8kjA
+function! MapCR()
+  nnoremap <silent> <enter> :call CRWriteIfNecessary()<CR>
+endfunction
+call MapCR()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Happy rails
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Restart Pow.cx for the Current App
