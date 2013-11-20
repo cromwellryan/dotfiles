@@ -12,7 +12,7 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-" languages, syntax, ...
+" Clean Code
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-erlang'
@@ -23,17 +23,23 @@ Bundle 'rstacruz/sparkup'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-rails'
 
-" nav, ui, git, ...
-Bundle 'scrooloose/nerdtree'
+" UI
 Bundle 'bling/vim-airline'
-Bundle 'kien/ctrlp.vim'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'nathanaelkane/vim-indent-guides'
+
+" Nav
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+
+" Git 
 Bundle 'tpope/vim-fugitive'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-easytags'
-Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'mhinz/vim-signify'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
@@ -89,8 +95,6 @@ set ignorecase smartcase
 nnoremap go o<Esc>k
 nnoremap gO O<Esc>j
 
-" Indent Guides
-let g:indent_guides_enable_on_vim_startup = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffers & Windows
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
