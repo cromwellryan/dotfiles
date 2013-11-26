@@ -36,6 +36,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
+Bundle 'epmatsw/ag.vim'
 
 " Git
 Bundle 'tpope/vim-fugitive'
