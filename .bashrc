@@ -20,6 +20,11 @@ alias cpath="pwd | pbcopy"
 alias cproj="cd ~/projects"
 alias cdot="cd ~/dotfiles"
 
+############################
+# tmuxinator
+############################
+export EDITOR='vim' 
+
 #Git-Svn is sad about perl moving in xcode
 export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level"
 
