@@ -19,6 +19,7 @@ alias v="vim"
 alias cpath="pwd | pbcopy"
 alias cproj="cd ~/projects"
 alias cdot="cd ~/dotfiles"
+alias xx="exit"
 
 ############################
 # tmuxinator
@@ -41,6 +42,7 @@ alias gup="git-up"
 alias gmv="git mv"
 alias grb="git rebase -i"
 alias gcp="git cherry-pick"
+alias gcl="git clone"
 
 ############################
 # Conveniences
