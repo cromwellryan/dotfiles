@@ -4,8 +4,6 @@ export PATH=$PATH:/usr/local/share/npm/bin
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PATH=/usr/local/bin:$PATH
 
 export NODE_PATH="/usr/local/lib/node_modules"
 
@@ -33,16 +31,21 @@ export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/da
 # Git
 ############################
 alias g="git"
-alias gc="git commit"
+alias ga="git add"
 alias gap="git add -p"
+alias gb="git branch"
+alias gc="git commit"
+alias gcm="git commit -m"
 alias gco="git checkout"
-alias gs="git status"
-alias gp="git push"
-alias gup="git-up"
 alias gmv="git mv"
+alias gp="git push"
+alias gs="git status"
+alias gh="git hist"
+alias gup="git-up"
+
+alias gd="git diff"
 alias grb="git rebase -i"
 alias gcp="git cherry-pick"
-alias gcl="git clone"
 
 ############################
 # Conveniences
@@ -69,4 +72,4 @@ function wreck() {
 
 export PATH=/usr/local/bin:$PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

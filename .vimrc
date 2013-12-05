@@ -28,7 +28,6 @@ Bundle 'tpope/vim-rails'
 " UI
 Bundle 'bling/vim-airline'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'nathanaelkane/vim-indent-guides'
 
 " Nav
@@ -162,14 +161,14 @@ map <leader>? <esc>:Dash<CR> " Dash to the rescue
 " Writes the current buffer if it's needed, unless we're the in QuickFix mode.
 " Source: https://github.com/mutewinter/dot_vim/
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function WriteBufferIfNecessary()
+function! WriteBufferIfNecessary()
   if &modified && filewritable(expand('%')) && !&readonly
     :write
   endif
 endfunction
 command! WriteBufferIfNecessary call WriteBufferIfNecessary()
 
-function CRWriteIfNecessary()
+function! CRWriteIfNecessary()
   if &filetype == "qf"
     " Execute a normal enter when in Quickfix list.
     execute "normal! \<enter>"
@@ -195,7 +194,7 @@ command! PowRestart :SilentCmd touch tmp/restart.txt; touch tmp/.livereload.rb
 " Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap % v% " Jump to matching object and visual select stuff between
-command NF :NERDTreeFind
+command! NF :NERDTreeFind
 
 nnoremap <leader>q :call QuickfixToggle()<cr>
 let g:quickfix_is_open = 0
