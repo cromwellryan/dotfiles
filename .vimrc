@@ -111,12 +111,6 @@ nmap <silent> <C-B> :bn<CR>             " next buffer
 nmap <silent> <C-N> :NERDTreeToggle<CR> " show/hide nerdtree
 map <leader>q <esc>:copen<CR>           " Open quick fix
 
-" Fast moving between windows
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
-
 " window
 nmap <leader>swh :topleft  vnew<CR>
 nmap <leader>swl :botright vnew<CR>
