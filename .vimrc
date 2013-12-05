@@ -214,7 +214,7 @@ function! QuickfixToggle()
   endif
 endfunction
 
-set nu            " Line numbers
+set rnu            " Relative line numbers
 set hlsearch      " Highlight search matches
 set laststatus=2
 
