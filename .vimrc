@@ -92,7 +92,7 @@ set background=dark
 colorscheme Tomorrow-Night
 
 if exists('+colorcolumn')
-    set colorcolumn=80
+  set colorcolumn=80
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -114,6 +114,7 @@ set ignorecase smartcase
 " add new lines without entering insert mode
 nnoremap go o<Esc>k
 nnoremap gO O<Esc>j
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffers & Windows
@@ -137,15 +138,15 @@ nmap <leader>sj  :rightbelow new<CR>
 " No 'Press Any Key to Contiue BS'
 " from: http://vim.wikia.com/wiki/Avoiding_the_%22Hit_ENTER_to_continue%22_prompts
 command! -nargs=1 SilentCmd
-\ | execute ':silent !'.<q-args>
-\ | execute ':redraw!'
+      \ | execute ':silent !'.<q-args>
+      \ | execute ':redraw!'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Refluxoring
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap <leader>k <esc>:'<,'>=G<CR> " Make this perty
-map <leader>k =G<CR> " Make it all perty
+map <leader>k gg=G''<CR> " Make it all perty
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
