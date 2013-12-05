@@ -32,7 +32,6 @@ Bundle 'nathanaelkane/vim-indent-guides'
 
 " Nav
 Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
 Bundle 'epmatsw/ag.vim'
@@ -53,6 +52,13 @@ filetype plugin indent on
 " christoomey/vim-tmux-navigator
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'christoomey/vim-tmux-navigator'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" kien/ctrlp.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'kien/ctrlp.vim'
+
+let g:ctrlp_show_hidden = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Valloric/YouCompleteMe
