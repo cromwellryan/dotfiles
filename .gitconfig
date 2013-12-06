@@ -25,3 +25,5 @@
 	templatedir = ~/.git_template
 [push]
 	default = matching
+[commit]
+	template = /Users/ryan/.gitmessage.txt
