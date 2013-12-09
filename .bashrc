@@ -22,7 +22,7 @@ alias xx="exit"
 ############################
 # tmuxinator
 ############################
-export EDITOR='vim' 
+export EDITOR='vim'
 
 #Git-Svn is sad about perl moving in xcode
 export PERL5LIB="/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level"
@@ -56,7 +56,7 @@ function mcd() {
   cd $1
 }
 
-function cdl() { 
+function cdl() {
   cd $1
   ls
 }
@@ -65,7 +65,7 @@ function cdl() {
 function wreck() {
   pushd .
 
-  WRECKDIR=`mktemp -d /tmp/wreckXXXXXXXXX` && { 
+  WRECKDIR=`mktemp -d /tmp/wreckXXXXXXXXX` && {
     cd $WRECKDIR
   }
 }
