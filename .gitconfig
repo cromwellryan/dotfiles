@@ -13,7 +13,7 @@
 	b = branch
 	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
   po = push origin master
-	hist = log -n 20 --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	hist = !git --no-pager log -n 20 --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   remove = remote
 
 [core]
