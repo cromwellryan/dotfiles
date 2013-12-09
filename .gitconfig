@@ -27,3 +27,5 @@
 	default = matching
 [commit]
 	template = /Users/ryan/.gitmessage.txt
+[git-up "bundler"]
+	check = true
