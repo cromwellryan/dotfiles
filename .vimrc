@@ -35,6 +35,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
 Bundle 'epmatsw/ag.vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 " Git
 Bundle 'tpope/vim-fugitive'
@@ -160,6 +161,12 @@ map <leader>? <esc>:Dash<CR> " Dash to the rescue
 :command! W w
 :command! Wq wq
 :command! Q q
+
+" Auto reload vimrc
+augroup reload_vimrc " {
+   autocmd!
+   autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Write Buffer if Necessary
