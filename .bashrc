@@ -44,7 +44,7 @@ alias gh="git hist"
 alias gup="git-up"
 
 alias gd="git diff"
-alias grb="git rebase -i HEAD~$1"
+alias grb="git rebase -i"
 alias gcp="git cherry-pick"
 
 ############################
