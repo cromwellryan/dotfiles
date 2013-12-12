@@ -40,6 +40,7 @@ alias gco="git checkout"
 alias gmv="git mv"
 alias gp="git push"
 alias gs="git status"
+alias gsh="git show"
 alias gh="git hist"
 alias gup="git-up"
 
