@@ -221,9 +221,11 @@ function! QuickfixToggle()
   endif
 endfunction
 
-set rnu            " Relative line numbers
-set hlsearch      " Highlight search matches
+set relativenumber  " Relative line numbers
+set number          " makes current line show linear line number
+set hlsearch        " Highlight search matches
 set laststatus=2
+set clipboard=unnamed
 
 
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
