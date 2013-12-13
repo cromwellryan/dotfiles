@@ -40,4 +40,4 @@ source $ZSH/oh-my-zsh.sh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-source ~/dotfiles/tmuxinator.zsh
+source ~/tmuxinator.zsh
