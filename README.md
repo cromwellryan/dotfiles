@@ -5,17 +5,18 @@
 ## Setup - Mac (possibly Linux - not confirmed lately)
 
 ```
-ln -s "$PWD/dotfiles/.vimrc" ~/.vimrc
-ln -s "$PWD/dotfiles/.bash_profile" ~/.bash_profile
-ln -s "$PWD/dotfiles/.bashrc" ~/.bashrc
-ln -s "$PWD/dotfiles/.gitconfig" ~/.gitconfig
-ln -s "$PWD/dotfiles/.gitmessage.txt" ~/.gitmessage.txt
-ln -s "$PWD/dotfiles/.iex" ~/.iex
-ln -s "$PWD/dotfiles/.tmux.conf" ~/.tmux.conf
-ln -s "$PWD/dotfiles/.tmux.start.sh" ~/.tmux.start.sh
-ln -s "$PWD/dotfiles/.zshenv" ~/.zshenv
-ln -s "$PWD/dotfiles/.zshrc" ~/.zshrc
-ln -s "$PWD/dotfiles/tmuxinator.zsh" ~/tmuxinator.zsh
+ln -s "$PWD/.agignore" ~/.agignore
+ln -s "$PWD/.vimrc" ~/.vimrc
+ln -s "$PWD/.bash_profile" ~/.bash_profile
+ln -s "$PWD/.bashrc" ~/.bashrc
+ln -s "$PWD/.gitconfig" ~/.gitconfig
+ln -s "$PWD/.gitmessage.txt" ~/.gitmessage.txt
+ln -s "$PWD/.iex" ~/.iex
+ln -s "$PWD/.tmux.conf" ~/.tmux.conf
+ln -s "$PWD/.tmux.start.sh" ~/.tmux.start.sh
+ln -s "$PWD/.zshenv" ~/.zshenv
+ln -s "$PWD/.zshrc" ~/.zshrc
+ln -s "$PWD/tmuxinator.zsh" ~/tmuxinator.zsh
 ```
 
 #####Windows - Elevated Powershell 2.0+#####
