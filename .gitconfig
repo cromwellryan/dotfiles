@@ -19,8 +19,6 @@
 [core]
 	excludesfile = /Users/ryan/.gitignore_global
 	editor = /usr/local/bin/vim
-[credential]
-	helper = cache
 [init]
 	templatedir = ~/.git_template
 [push]
@@ -29,3 +27,5 @@
 	template = /Users/ryan/.gitmessage.txt
 [git-up "bundler"]
 	check = true
+[credential]
+	helper = cache --timeout=1800
