@@ -202,6 +202,7 @@ function! CRWriteIfNecessary()
     execute "normal! \<enter>"
   else
     WriteBufferIfNecessary
+    :redraw!
   endif
 endfunction
 
