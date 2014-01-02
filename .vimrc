@@ -237,6 +237,12 @@ function! QuickfixToggle()
   endif
 endfunction
 
+nnoremap <leader><leader>o :call SystemOpenCurrentFile()<cr>
+function! SystemOpenCurrentFile()
+  :SilentCmd open %
+endfunction
+
+
 set relativenumber  " Relative line numbers
 set number          " makes current line show linear line number
 set hlsearch        " Highlight search matches
