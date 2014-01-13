@@ -74,6 +74,10 @@ function wreck() {
   }
 }
 
+function clear-dns-cache() {
+  sudo killall -HUP mDNSResponder
+}
+
 export TERM="xterm-256color"
 export PATH=/usr/local/bin:$PATH
 
