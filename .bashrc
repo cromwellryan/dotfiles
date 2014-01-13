@@ -36,6 +36,7 @@ alias gap="git add -p"
 alias gb="git branch"
 alias gc="git commit"
 alias gcm="git commit -m"
+alias go="git checkout"
 alias gco="git checkout"
 alias gf="git fetch"
 alias gcb="git checkout -b"
@@ -73,6 +74,7 @@ function wreck() {
   }
 }
 
+export TERM="xterm-256color"
 export PATH=/usr/local/bin:$PATH
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
