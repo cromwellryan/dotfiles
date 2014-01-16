@@ -33,4 +33,6 @@ cmd /c mklink %USERPROFILE%\.gitconfig %USERPROFILE%\dotfiles\.gitconfig
 
 mkdir ~/.vim/bundle
 git clone https://github.com/gmarik/vundle.git $($env:userprofile)\.vim\bundle\vundle
+
+vim +BundleInstall
 ```

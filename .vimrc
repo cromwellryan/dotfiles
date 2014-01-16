@@ -51,6 +51,9 @@ Bundle 'rizzatti/dash.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
 
+" Html
+Bundle 'mattn/emmet-vim'
+
 filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
