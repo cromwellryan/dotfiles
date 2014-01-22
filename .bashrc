@@ -45,7 +45,7 @@ alias gp="git push"
 alias gs="git status"
 alias gsh="git show"
 alias gh="git hist"
-alias gup="git-up"
+alias gup="git pull --rebase"
 
 alias gd="git diff"
 alias grb="git rebase"
