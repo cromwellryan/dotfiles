@@ -33,11 +33,8 @@ plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
-### Added by the Heroku Toolbelt
-#export PATH="/usr/local/heroku/bin:$PATH"
-
-#source ~/.bin/tmuxinator.zsh
+source ~/tmuxinator.zsh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-source ~/tmuxinator.zsh
+__rvm_project_rvmrc

@@ -65,7 +65,6 @@ function cdl() {
   ls
 }
 
-
 function wreck() {
   pushd .
 
