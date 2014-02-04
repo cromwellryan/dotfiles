@@ -15,7 +15,7 @@ alias ebash="vim ~/dotfiles/.bashrc"
 alias evim="vim ~/dotfiles/.vimrc"
 alias v="vim"
 alias cpath="pwd | pbcopy"
-alias cproj="cd ~/projects"
+alias p="cd ~/projects"
 alias cdot="cd ~/dotfiles"
 alias xx="exit"
 
