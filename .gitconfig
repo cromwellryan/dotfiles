@@ -18,11 +18,7 @@
 	editor = /usr/local/bin/vim
 [init]
 	templatedir = ~/.git_template
-[push]
-	default = matching
 [commit]
 	template = /Users/ryan/.gitmessage.txt
-[git-up "bundler"]
-	check = true
 [credential]
 	helper = cache --timeout=1800
