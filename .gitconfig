@@ -1,9 +1,6 @@
 [user]
 	name = Ryan Cromwell
 	email = ryan@heysparkbox.com
-[github]
-	user = cromwellryan
-	token = 7cccf74d614c5247a99fa2c22ab896fd
 [alias]
 	st = status
 	co = checkout
