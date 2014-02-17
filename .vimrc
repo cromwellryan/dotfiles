@@ -17,7 +17,7 @@ Bundle 'gmarik/vundle'
 " Clean Code
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-erlang'
+Bundle 'oscarh/vimerl'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'rstacruz/sparkup'
@@ -28,14 +28,11 @@ Bundle 'tpope/vim-rails'
 " UI
 Bundle 'bling/vim-airline'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Bundle 'nathanaelkane/vim-indent-guides'
 
 " Nav
 Bundle 'scrooloose/nerdtree'
 Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-easytags'
 Bundle 'epmatsw/ag.vim'
-Bundle 'Lokaltog/vim-easymotion'
 
 " Git
 Bundle 'tpope/vim-fugitive'
@@ -51,10 +48,13 @@ Bundle 'rizzatti/dash.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
 
-" Html
-Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" mattn/emmet-vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'mattn/emmet-vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " thoughtbot/vim-rspec
