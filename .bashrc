@@ -73,6 +73,10 @@ function wreck() {
   }
 }
 
+function tree() {
+  find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+}
+
 function clear-dns-cache() {
   sudo killall -HUP mDNSResponder
 }
