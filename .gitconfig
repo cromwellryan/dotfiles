@@ -22,3 +22,7 @@
 	template = /Users/ryan/.gitmessage.txt
 [credential]
 	helper = cache --timeout=1800
+[github]
+	user = cromwellryan
+[push]
+	default = simple
