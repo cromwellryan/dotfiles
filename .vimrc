@@ -56,6 +56,12 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'mattn/emmet-vim'
 
+" Only use emmet with html/css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+imap <Tab><Tab> <c-y>,
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " thoughtbot/vim-rspec
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
