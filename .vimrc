@@ -60,7 +60,7 @@ Bundle 'mattn/emmet-vim'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
-imap <Tab><Tab> <c-y>,
+imap <C-k> <c-y>,
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " thoughtbot/vim-rspec
