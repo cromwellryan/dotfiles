@@ -19,8 +19,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'oscarh/vimerl'
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'lukaszb/vim-web-indent'
-Bundle 'rstacruz/sparkup'
 
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-rails'
