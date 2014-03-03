@@ -92,13 +92,6 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" xolox/vim-easytags
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" use project specific ctags by default
-:set tags=./tags;
-:let g:easytags_dynamic_files = 1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mattn/gist-vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gist_clip_command = 'pbcopy'
