@@ -20,7 +20,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'oscarh/vimerl'
 Bundle 'elixir-lang/vim-elixir'
 
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-rails'
 
 " UI
@@ -48,6 +47,8 @@ Bundle 'jgdavey/tslime.vim'
 
 
 filetype plugin indent on
+
+:imap jj <Esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mattn/emmet-vim
@@ -85,8 +86,8 @@ let g:ctrlp_show_hidden = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Valloric/YouCompleteMe
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'Valloric/YouCompleteMe'
 let g:ycm_complete_in_comments = 1
-let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
