@@ -20,8 +20,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'oscarh/vimerl'
 Bundle 'elixir-lang/vim-elixir'
 
-Bundle 'tpope/vim-rails'
-
 " UI
 Bundle 'bling/vim-airline'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
@@ -29,7 +27,6 @@ Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 " Nav
 Bundle 'scrooloose/nerdtree'
 Bundle 'xolox/vim-misc'
-Bundle 'epmatsw/ag.vim'
 
 " Git
 Bundle 'tpope/vim-fugitive'
@@ -49,6 +46,25 @@ Bundle 'jgdavey/tslime.vim'
 filetype plugin indent on
 
 :imap jj <Esc>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" epmatsw/ag.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'epmatsw/ag.vim'
+
+nnoremap \ :Ag<SPACE>
+
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mattn/emmet-vim
@@ -83,6 +99,7 @@ Bundle 'kien/ctrlp.vim'
 
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_use_caching = 0 " Disable caching since Ag is blazin'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Valloric/YouCompleteMe
@@ -162,10 +179,17 @@ command! -nargs=1 SilentCmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Refluxoring
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap <leader>k <esc>:'<,'>=G<CR> " Make this perty
-map <leader>k gg=G''<CR> " Make it all perty
+" Make this perty
+vmap <leader>k <esc>:'<,'>=G<CR>
+
+" Make it all perty
+map <leader>k gg=G''<CR>
+
+" Search and Replace word under cursor
 :nnoremap <Leader>S :%s/\<<C-r><C-w>\>//g<Left><Left>
-:nnoremap <Leader><Leader>S :Ag <C-r><C-w>
+
+" Grep (Ag) word under cursor
+:nnoremap <Leader><Leader>S :grep <C-r><C-w>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Learnin'
@@ -177,12 +201,12 @@ map <leader>? <esc>:Dash<CR> " Dash to the rescue
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 :command! W w
 :command! Wq wq
-:command! Q q
+:command! WQ q
 
 " Auto reload vimrc
 augroup reload_vimrc " {
-   autocmd!
-   autocmd BufWritePost $MYVIMRC source $MYVIMRC
+  autocmd!
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -214,6 +238,14 @@ function! MapCR()
   nnoremap <silent> <enter> :call CRWriteIfNecessary()<CR>
 endfunction
 call MapCR()
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" tpope/vim-rails
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'tpope/vim-rails'
+
+nnoremap <LEADER>av :AV<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Happy rails
