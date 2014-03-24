@@ -1,6 +1,7 @@
 /db/migrate/
 /log/
 /logs/
+tmp/
 *.tags*
 *.log
 *.sql
