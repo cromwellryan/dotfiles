@@ -21,18 +21,11 @@ Bundle 'oscarh/vimerl'
 Bundle 'elixir-lang/vim-elixir'
 
 " UI
-Bundle 'bling/vim-airline'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 " Nav
 Bundle 'scrooloose/nerdtree'
 Bundle 'xolox/vim-misc'
-
-" Git
-Bundle 'tpope/vim-fugitive'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'mhinz/vim-signify'
 
 " Dash integration
 Bundle 'rizzatti/funcoo.vim'
@@ -42,10 +35,29 @@ Bundle 'rizzatti/dash.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
 
+Bundle 'chrisbra/csv.vim'
 
 filetype plugin indent on
 
 :imap jj <Esc>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" bling/vim-airline
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Git & Github
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'tpope/vim-fugitive'
+
+map <Leader>gs :Gstatus<CR>
+map <Leader>gc :Gcommit<CR>
+
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'mhinz/vim-signify'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -73,7 +85,7 @@ Bundle 'mattn/emmet-vim'
 
 " Only use emmet with html/css
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,erb,css EmmetInstall
 
 imap <C-k> <c-y>,
 
@@ -189,7 +201,7 @@ map <leader>k gg=G''<CR>
 :nnoremap <Leader>S :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " Grep (Ag) word under cursor
-:nnoremap <Leader><Leader>S :grep <C-r><C-w>
+:nnoremap <Leader><Leader>S :Ag <C-r><C-w>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Learnin'
