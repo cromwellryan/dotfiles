@@ -128,6 +128,13 @@ let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
+" make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
+nnoremap Q @@
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
@@ -170,15 +177,15 @@ nmap <silent> <C-N> :NERDTreeToggle<CR> " show/hide nerdtree
 map <leader>q <esc>:copen<CR>           " Open quick fix
 
 " window
-nmap <leader>swh :topleft  vnew<CR>
-nmap <leader>swl :botright vnew<CR>
-nmap <leader>swk :topleft  new<CR>
-nmap <leader>swj :botright new<CR>
+nmap <leader>gwh :topleft  vnew<CR>
+nmap <leader>gwl :botright vnew<CR>
+nmap <leader>gwk :topleft  new<CR>
+nmap <leader>gwj :botright new<CR>
 " " buffer
-nmap <leader>sh  :leftabove  vnew<CR>
-nmap <leader>sl  :rightbelow vnew<CR>
-nmap <leader>sk  :leftabove  new<CR>
-nmap <leader>sj  :rightbelow new<CR>
+nmap <leader>gh  :leftabove  vnew<CR>
+nmap <leader>gl  :rightbelow vnew<CR>
+nmap <leader>gk  :leftabove  new<CR>
+nmap <leader>gj  :rightbelow new<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " No 'Press Any Key to Contiue BS'
@@ -198,7 +205,8 @@ vmap <leader>k <esc>:'<,'>=G<CR>
 map <leader>k gg=G''<CR>
 
 " Search and Replace word under cursor
-:nnoremap <Leader>S :%s/\<<C-r><C-w>\>//g<Left><Left>
+:nnoremap <Leader><Leader>s /<C-r><C-w>
+:nnoremap <Leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " Grep (Ag) word under cursor
 :nnoremap <Leader><Leader>S :Ag <C-r><C-w>
