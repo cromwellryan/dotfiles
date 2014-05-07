@@ -33,7 +33,6 @@ Bundle 'rizzatti/dash.vim'
 
 " Ruby
 Bundle 'thoughtbot/vim-rspec'
-Bundle 'jgdavey/tslime.vim'
 
 Bundle 'chrisbra/csv.vim'
 
@@ -90,14 +89,25 @@ autocmd FileType html,erb,css EmmetInstall
 imap <C-k> <c-y>,
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" thoughtbot/vim-rspec
+" benmills/vimux
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:rspec_command = 'call Send_to_Tmux("spring rspec {spec}\n")'
+Bundle 'benmills/vimux'
 
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+let g:VimuxUseNearestPane = 1
+" Setup filetype specific <leader>a commands in ftplugin
+
+nnoremap <leader>l :call VimuxRunLastCommand()<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" jgdavey/vim-turbux
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'jgdavey/vim-turbux'
+
+let g:no_turbux_mappings = 1
+map <leader>t <Plug>SendTestToTmux
+map <leader>s <Plug>SendFocusedTestToTmux
+let g:turbux_command_rspec = 'spring rspec'
+let g:turbux_command_cucumber = 'spring cucumber'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " christoomey/vim-tmux-navigator
