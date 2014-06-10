@@ -34,6 +34,9 @@ Bundle 'rizzatti/dash.vim'
 " Ruby
 Bundle 'thoughtbot/vim-rspec'
 
+" Handlebars
+Bundle 'mustache/vim-mustache-handlebars'
+
 Bundle 'chrisbra/csv.vim'
 
 filetype plugin indent on
@@ -313,6 +316,10 @@ set hlsearch        " Highlight search matches
 set laststatus=2
 set clipboard=unnamed
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Coffeescript
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
 map <leader>c :CoffeeCompile<CR>
+
+map <leader><leader>O !open %<CR>
