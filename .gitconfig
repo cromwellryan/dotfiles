@@ -8,10 +8,12 @@
 	cia = commit --amend -C HEAD
 	a = add -p .
 	b = branch
-	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
-  po = push origin master
+  pom = push origin master
 	hist = !git --no-pager log -n 20 --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   remove = remote
+  fa = fetch --all
+  ff = merge --ff-only
+  noff = merge --no-ff
 
 [core]
 	excludesfile = /Users/ryan/.gitignore_global
