@@ -37,6 +37,10 @@ Bundle 'thoughtbot/vim-rspec'
 " Handlebars
 Bundle 'mustache/vim-mustache-handlebars'
 
+" Markdown
+" Support *.md so that ftplugin/markdown.vim is autoloaded
+Bundle 'tpope/vim-markdown'
+
 Bundle 'chrisbra/csv.vim'
 
 filetype plugin indent on
