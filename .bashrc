@@ -46,6 +46,8 @@ alias p="cd ~/projects"
 alias xx="exit"
 alias :q=kill-that-habit
 alias :Q=kill-that-habit
+alias ll="ls -alh"
+alias l="ls -l"
 
 # mostly tmuxinator, but others like it too.
 export EDITOR='vim'
@@ -114,4 +116,4 @@ function clear-dns-cache() {
 export TERM="xterm-256color"
 export PATH=/usr/local/bin:$PATH
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
