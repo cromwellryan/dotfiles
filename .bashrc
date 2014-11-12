@@ -6,6 +6,7 @@ export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
 
 export NODE_PATH="/usr/local/lib/node_modules"
+export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
 ############################
 # colors for output
