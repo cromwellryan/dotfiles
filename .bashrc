@@ -84,6 +84,10 @@ alias gd="git diff"
 alias grb="git rebase"
 alias gcp="git cherry-pick"
 
+function git-poooosh() {
+  gp && gp origin :$1 && gb -d $1
+}
+
 ############################
 # Conveniences
 ############################
