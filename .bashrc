@@ -84,6 +84,8 @@ alias gd="git diff"
 alias grb="git rebase"
 alias gcp="git cherry-pick"
 
+alias gpp='git-poooosh'
+
 ############################
 # Conveniences
 ############################

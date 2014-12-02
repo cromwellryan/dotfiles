@@ -16,10 +16,12 @@ ln -s "$PWD/.tmux.conf" ~/.tmux.conf
 ln -s "$PWD/.tmux.start.sh" ~/.tmux.start.sh
 ln -s "$PWD/.zshenv" ~/.zshenv
 ln -s "$PWD/.zshrc" ~/.zshrc
+ln -s "$PWD/plugins/git-poooosh" ~/.oh-my-zsh/custom/plugins/git-poooosh
 ln -s "$PWD/tmuxinator.zsh" ~/tmuxinator.zsh
 ```
 
 #####Windows - Elevated Powershell 2.0+#####
+_Warning: No clue how well this works any longer_
 
 ```
 cd ~
