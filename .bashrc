@@ -79,6 +79,8 @@ alias gsh="git show"
 alias gh="git hist"
 alias gup="git pull --rebase && git remote update origin --prune"
 alias gfuckit="git reset --hard HEAD@{upstream}"
+alias branch="git symbolic-ref --short HEAD 2> /dev/null"
+alias cbranch="git symbolic-ref --short HEAD 2> /dev/null | pbcopy"
 
 alias gd="git diff"
 alias grb="git rebase"
