@@ -90,8 +90,6 @@ endif
 Bundle 'mattn/emmet-vim'
 
 " Only use emmet with html/css
-let g:user_emmet_install_global = 0
-autocmd FileType html,erb,css EmmetInstall
 
 imap <C-k> <c-y>,
 
