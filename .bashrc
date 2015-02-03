@@ -4,6 +4,7 @@ export PATH=$PATH:/usr/local/share/npm/bin
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
+export PATH=$PATH:./node_modules/.bin
 
 export NODE_PATH="/usr/local/lib/node_modules"
 export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
