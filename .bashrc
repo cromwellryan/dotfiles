@@ -93,6 +93,7 @@ alias gpp='git-poooosh'
 # Conveniences
 ############################
 
+alias gpg=gpg2
 function mcd() {
   mkdir $1
   cd $1
@@ -101,6 +102,12 @@ function mcd() {
 function cdl() {
   cd $1
   ls
+}
+
+# Examples:
+# whats-listening-to 8000
+function whats-listening-to() {
+  lsof -i tcp:$1
 }
 
 function wreck() {
