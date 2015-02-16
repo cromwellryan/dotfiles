@@ -1,30 +1,34 @@
 [user]
-	name = Ryan Cromwell
-	email = ryan@heysparkbox.com
+  name = Ryan Cromwell
+  email = ryan@heysparkbox.com
+  signingkey = Ryan Cromwell Sr <ryan@cromwellhaus.com>
 [alias]
-	st = status
-	co = checkout
-	cm = commit
-	cia = commit --amend -C HEAD
-	a = add -p .
+  st = status
+  co = checkout
+  cm = commit
+  cia = commit --amend -C HEAD
+  a = add -p .
 	b = branch
   pom = push origin master
-	hist = !git --no-pager log -n 20 --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = !git --no-pager log -n 20 --pretty=format:\"%C(yellow)%h%C(reset) %C(green)%ad%C(reset) %C(red)|%C(reset) %s%C(red)%d %C(reset)- %an%C(reset)\" --graph --date=short
   remove = remote
   fa = fetch --all
   ff = merge --ff-only
   noff = merge --no-ff
 
 [core]
-	excludesfile = /Users/ryan/.gitignore_global
-	editor = /usr/local/bin/vim
+  excludesfile = /Users/ryan/.gitignore_global
+  editor = /usr/local/bin/vim
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
 [commit]
-	template = /Users/ryan/.gitmessage.txt
+  template = /Users/ryan/.gitmessage.txt
+  gpgsign = true
 [credential]
-	helper = cache --timeout=1800
+  helper = cache --timeout=1800
 [github]
-	user = cromwellryan
+  user = cromwellryan
 [push]
-	default = simple
+  default = simple
+[pull]
+  rebase = true
