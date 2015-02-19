@@ -130,3 +130,14 @@ export TERM="xterm-256color"
 export PATH=/usr/local/bin:$PATH
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+############################
+# startup gpg-agent
+############################
+GPG_AGENT=$(which gpg-agent)
+GPG_TTY=`tty`
+export GPG_TTY
+
+if [ -f ${GPG_AGENT} ]; then
+    . ~/.bash_gpg
+fi
