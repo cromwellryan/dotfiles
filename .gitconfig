@@ -24,6 +24,8 @@
 [commit]
   template = /Users/ryan/.gitmessage.txt
   gpgsign = true
+[rerere]
+	enabled = 1
 [credential]
   helper = cache --timeout=1800
 [github]
