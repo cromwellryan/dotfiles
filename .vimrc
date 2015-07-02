@@ -112,8 +112,8 @@ Bundle 'jgdavey/vim-turbux'
 let g:no_turbux_mappings = 1
 map <leader>t <Plug>SendTestToTmux
 map <leader>s <Plug>SendFocusedTestToTmux
-let g:turbux_command_rspec = 'spring rspec'
-let g:turbux_command_cucumber = 'spring cucumber'
+let g:turbux_command_rspec = 'bundle exec spring rspec'
+let g:turbux_command_cucumber = 'bundle exec spring cucumber'
 let g:turbux_command_teaspoon = 'jasmine-node'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
