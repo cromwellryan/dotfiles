@@ -297,6 +297,9 @@ nnoremap <LEADER>av :AV<CR>
 " Restart Pow.cx for the Current App
 command! PowRestart :SilentCmd touch tmp/restart.txt; touch tmp/.livereload.rb
 
+" Capistrano tasks are ruby files
+au BufNewFile,BufRead *.cap set filetype=ruby
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
