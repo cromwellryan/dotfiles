@@ -2,6 +2,7 @@
   name = Ryan Cromwell
   email = ryan@heysparkbox.com
   signingkey = Ryan Cromwell Sr <ryan@cromwellhaus.com>
+
 [alias]
   st = status
   co = checkout
