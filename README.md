@@ -7,6 +7,8 @@
 ```
 ln -s "$PWD/.agignore" ~/.agignore
 ln -s "$PWD/.vimrc" ~/.vimrc
+ln -s "$PWD/ftplugin" ~/.vim/ftplugin
+ln -s "$PWD/plugin" ~/.vim/plugin
 ln -s "$PWD/.bash_profile" ~/.bash_profile
 ln -s "$PWD/.bashrc" ~/.bashrc
 ln -s "$PWD/.gitconfig" ~/.gitconfig
@@ -16,7 +18,7 @@ ln -s "$PWD/.tmux.conf" ~/.tmux.conf
 ln -s "$PWD/.tmux.start.sh" ~/.tmux.start.sh
 ln -s "$PWD/.zshenv" ~/.zshenv
 ln -s "$PWD/.zshrc" ~/.zshrc
-ln -s "$PWD/plugins/git-poooosh" ~/.oh-my-zsh/custom/plugins/git-poooosh
+ln -s "$PWD/zsh-plugins/git-poooosh" ~/.oh-my-zsh/custom/plugins/git-poooosh
 ln -s "$PWD/tmuxinator.zsh" ~/tmuxinator.zsh
 ```
 
