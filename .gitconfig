@@ -18,12 +18,12 @@
   noff = merge --no-ff
 
 [core]
-  excludesfile = /Users/ryan/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = /usr/local/bin/vim
 [init]
   templatedir = ~/.git_template
 [commit]
-  template = /Users/ryan/.gitmessage.txt
+  template = ~/.gitmessage.txt
   gpgsign = true
 [rerere]
 	enabled = 1
