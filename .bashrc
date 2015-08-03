@@ -48,7 +48,7 @@ alias p="cd ~/projects"
 alias xx="exit"
 alias :q=kill-that-habit
 alias :Q=kill-that-habit
-alias ll="ls -alh"
+alias ll="ls -ahl"
 alias l="ls -l"
 
 # mostly tmuxinator, but others like it too.
