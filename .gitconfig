@@ -28,7 +28,7 @@
 [rerere]
 	enabled = 1
 [credential]
-  helper = cache --timeout=1800
+	helper = osxkeychain
 [github]
   user = cromwellryan
 [push]
