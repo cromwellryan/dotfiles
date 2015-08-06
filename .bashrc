@@ -46,6 +46,7 @@ alias v="vim"
 alias cpath="pwd | pbcopy"
 alias p="cd ~/projects"
 alias xx="exit"
+alias h="history"
 alias :q=kill-that-habit
 alias :Q=kill-that-habit
 alias ll="ls -ahl"
