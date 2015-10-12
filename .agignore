@@ -5,3 +5,5 @@ tmp/
 *.tags*
 *.log
 *.sql
+node_modules/
+bower_components/
