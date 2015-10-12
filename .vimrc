@@ -12,64 +12,68 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Clean Code
-Bundle 'scrooloose/syntastic'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'oscarh/vimerl'
-Bundle 'elixir-lang/vim-elixir'
+Plugin 'scrooloose/syntastic'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'oscarh/vimerl'
+Plugin 'elixir-lang/vim-elixir'
 
 " UI
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 " Nav
-Bundle 'scrooloose/nerdtree'
-Bundle 'xolox/vim-misc'
+Plugin 'scrooloose/nerdtree'
+Plugin 'xolox/vim-misc'
 
 " Dash integration
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/dash.vim'
 
 " Ruby
-Bundle 'thoughtbot/vim-rspec'
+Plugin 'thoughtbot/vim-rspec'
 
 " Handlebars
-Bundle 'mustache/vim-mustache-handlebars'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " Markdown
 " Support *.md so that ftplugin/markdown.vim is autoloaded
-Bundle 'tpope/vim-markdown'
+Plugin 'tpope/vim-markdown'
 
-Bundle 'chrisbra/csv.vim'
-
-filetype plugin indent on
+Plugin 'chrisbra/csv.vim'
 
 :imap jj <Esc>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Docker!
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'ekalinin/Dockerfile.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bling/vim-airline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git & Github
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'mhinz/vim-signify'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'mhinz/vim-signify'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " epmatsw/ag.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'epmatsw/ag.vim'
+Plugin 'epmatsw/ag.vim'
 
 nnoremap \ :Ag<SPACE>
 
@@ -88,7 +92,7 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mattn/emmet-vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 
 " Only use emmet with html/css
 
@@ -97,7 +101,7 @@ imap <C-k> <c-y>,
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " benmills/vimux
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'benmills/vimux'
+Plugin 'benmills/vimux'
 
 let g:VimuxUseNearestPane = 1
 " Setup filetype specific <leader>a commands in ftplugin
@@ -107,7 +111,7 @@ nnoremap <leader>l :call VimuxRunLastCommand()<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " jgdavey/vim-turbux
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'jgdavey/vim-turbux'
+Plugin 'jgdavey/vim-turbux'
 
 let g:no_turbux_mappings = 1
 map <leader>t <Plug>SendTestToTmux
@@ -119,12 +123,12 @@ let g:turbux_command_teaspoon = 'jasmine-node'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " christoomey/vim-tmux-navigator
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " kien/ctrlp.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
@@ -133,7 +137,7 @@ let g:ctrlp_use_caching = 0 " Disable caching since Ag is blazin'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Valloric/YouCompleteMe
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
@@ -281,13 +285,13 @@ call MapCR()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-ruby/vim-ruby
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'vim-ruby/vim-ruby'
+Plugin 'vim-ruby/vim-ruby'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " tpope/vim-rails
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 
 nnoremap <LEADER>av :AV<CR>
 
