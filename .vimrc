@@ -283,6 +283,11 @@ call MapCR()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ApiBlueprint support
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'kylef/apiblueprint.vim'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-ruby/vim-ruby
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'vim-ruby/vim-ruby'
@@ -296,6 +301,11 @@ Plugin 'tpope/vim-rails'
 nnoremap <LEADER>av :AV<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" mxw/vim-jsx
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'mxw/vim-jsx'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Happy rails
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Restart Pow.cx for the Current App
@@ -303,6 +313,7 @@ command! PowRestart :SilentCmd touch tmp/restart.txt; touch tmp/.livereload.rb
 
 " Capistrano tasks are ruby files
 au BufNewFile,BufRead *.cap set filetype=ruby
+au BufNewFile,BufRead *.rabl set filetype=ruby
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
@@ -341,3 +352,9 @@ vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
 map <leader>c :CoffeeCompile<CR>
 
 map <leader><leader>O !open %<CR>
+
+call vundle#end()
+au BufNewFile,BufRead *.apib set filetype=apiblueprint
+
+
+filetype plugin indent on
