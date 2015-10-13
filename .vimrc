@@ -358,3 +358,4 @@ au BufNewFile,BufRead *.apib set filetype=apiblueprint
 
 
 filetype plugin indent on
+set exrc
