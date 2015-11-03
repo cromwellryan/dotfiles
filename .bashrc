@@ -7,7 +7,6 @@ export PATH=$PATH:/sbin
 export PATH=$PATH:./node_modules/.bin
 
 export NODE_PATH="/usr/local/lib/node_modules"
-export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
 ############################
 # colors for output
@@ -118,10 +117,6 @@ function wreck() {
   }
 }
 
-function tree() {
-  find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
-}
-
 function clear-dns-cache() {
   sudo killall -HUP mDNSResponder
 }
@@ -129,7 +124,12 @@ function clear-dns-cache() {
 export TERM="xterm-256color"
 export PATH=/usr/local/bin:$PATH
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+############################
+# Docker
+############################
+alias d=docker
+alias dc=docker-compose
+alias dm=docker-machine
 
 ############################
 # startup gpg-agent
@@ -141,3 +141,5 @@ export GPG_TTY
 if [ -f ${GPG_AGENT} ]; then
     . ~/.bash_gpg
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
