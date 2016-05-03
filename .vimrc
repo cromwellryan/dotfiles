@@ -73,7 +73,7 @@ Plugin 'mhinz/vim-signify'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " epmatsw/ag.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'epmatsw/ag.vim'
+Plugin 'rking/ag.vim'
 
 nnoremap \ :Ag<SPACE>
 
@@ -106,7 +106,8 @@ Plugin 'benmills/vimux'
 let g:VimuxUseNearestPane = 1
 " Setup filetype specific <leader>a commands in ftplugin
 
-nnoremap <leader>l :call VimuxRunLastCommand()<CR>
+nnoremap vlc :call VimuxRunLastCommand()<CR>
+nmap vmp :VimuxPromptCommand<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " jgdavey/vim-turbux
@@ -244,6 +245,7 @@ map <leader>? <esc>:Dash<CR> " Dash to the rescue
 :command! Q q
 :command! Wq wq
 :command! WQ q
+:command! E ene
 
 " Auto reload vimrc
 augroup reload_vimrc " {
@@ -306,6 +308,16 @@ nnoremap <LEADER>av :AV<CR>
 Plugin 'mxw/vim-jsx'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Happy writing
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'junegunn/goyo.vim'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Run buffers quickly
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'thinca/vim-quickrun'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Happy rails
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Restart Pow.cx for the Current App
@@ -344,12 +356,6 @@ set number          " makes current line show linear line number
 set hlsearch        " Highlight search matches
 set laststatus=2
 set clipboard=unnamed
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Coffeescript
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
-map <leader>c :CoffeeCompile<CR>
 
 map <leader><leader>O !open %<CR>
 
