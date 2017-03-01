@@ -16,8 +16,8 @@ Plugin 'VundleVim/vundle'
 
 " Clean Code
 Plugin 'scrooloose/syntastic'
-Plugin 'oscarh/vimerl'
-Plugin 'elixir-lang/vim-elixir'
+
+Plugin 'tpope/vim-surround'
 
 " UI
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
@@ -33,14 +33,16 @@ Plugin 'rizzatti/dash.vim'
 " Ruby
 Plugin 'thoughtbot/vim-rspec'
 
-" Handlebars
-Plugin 'mustache/vim-mustache-handlebars'
+" Language Support
+Plugin 'sheerun/vim-polyglot'
 
 " Markdown
 " Support *.md so that ftplugin/markdown.vim is autoloaded
 Plugin 'tpope/vim-markdown'
 
 Plugin 'chrisbra/csv.vim'
+
+Plugin 'vim-scripts/LargeFile'
 
 :imap jj <Esc>
 
@@ -275,22 +277,11 @@ call MapCR()
 Plugin 'kylef/apiblueprint.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-ruby/vim-ruby
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'vim-ruby/vim-ruby'
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " tpope/vim-rails
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'tpope/vim-rails'
 
 nnoremap <LEADER>av :AV<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" mxw/vim-jsx
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'mxw/vim-jsx'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Happy writing

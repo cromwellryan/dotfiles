@@ -9,13 +9,15 @@
   cm = commit
   cia = commit --amend -C HEAD
   a = add -p .
-	b = branch
-  pom = push origin master
+  b = branch
   hist = !git --no-pager log -n 20 --pretty=format:\"%C(yellow)%h%C(reset) %C(green)%ad%C(reset) %C(red)|%C(reset) %s%C(red)%d %C(reset)- %an%C(reset)\" --graph --date=short
   remove = remote
   fa = fetch --all
-  ff = merge --ff-only
+  mf = merge --ff-only
   noff = merge --no-ff
+  up = pull --rebase && remote update origin --prune
+
+  ghprs = "!f() { remote=$1; : ${remote:=$(git remote | grep '^origin\\|upstream$' | sort --reverse | head -1)}; if [ $remote ]; then git config --add remote.$remote.fetch +refs/pull/*/head:refs/remotes/${remote}/pr/*; echo \"added github PR refspec to fetch from ${remote}\" ; else echo 'no remote given nor upstream or origin remote'; fi; git fetch ${remote}; }; f"
 
 [core]
   excludesfile = ~/.gitignore_global

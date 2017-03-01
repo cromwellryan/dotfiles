@@ -34,6 +34,7 @@ plugins=(git-poooosh)
 source $ZSH/oh-my-zsh.sh
 
 source ~/tmuxinator.zsh
+source ~/.bashrc
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #source ~/.bashrc
