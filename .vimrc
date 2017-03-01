@@ -8,15 +8,14 @@ vnoremap ; :
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible " be iMproved
 filetype off     " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/vundle'
 
 " Clean Code
 Plugin 'scrooloose/syntastic'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'oscarh/vimerl'
 Plugin 'elixir-lang/vim-elixir'
 
@@ -155,20 +154,6 @@ let g:gist_open_browser_after_post = 1
 " Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
 nnoremap Q @@
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" UI
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set t_Co=256
-set noshowmode             " Airline gives mode
-
-syntax enable
-set background=dark
-colorscheme Tomorrow-Night
-
-if exists('+colorcolumn')
-  set colorcolumn=80
-endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tabs and indentation
@@ -360,8 +345,26 @@ set clipboard=unnamed
 map <leader><leader>O !open %<CR>
 
 call vundle#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" API Blueprint
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 au BufNewFile,BufRead *.apib set filetype=apiblueprint
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" UI
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set t_Co=256
+set noshowmode             " Airline gives mode
+
+syntax enable
+set background=dark
+colorscheme Tomorrow-Night
+
+if exists('+colorcolumn')
+  set colorcolumn=80
+endif
 
 filetype plugin indent on
 set exrc

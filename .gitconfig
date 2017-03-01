@@ -20,8 +20,6 @@
 [core]
   excludesfile = ~/.gitignore_global
   editor = /usr/local/bin/vim
-[init]
-  templatedir = ~/.git_template
 [commit]
   template = ~/.gitmessage.txt
   gpgsign = true

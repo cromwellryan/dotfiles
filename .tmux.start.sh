@@ -1,7 +1,7 @@
 #!/bin/sh 
 export PATH=$PATH:~/.local/bin:/usr/local/bin
 [ "$TMUX" == "" ] || exit 0 
-tmux has-session -t _default || tmux new-session -s _default -d
+tmux has-session -t default || tmux new-session -s default -d
 PS3="Please choose your session: "
 options=($(tmux list-sessions -F "#S") "NEW SESSION" "ZSH")
 echo "Available sessions"

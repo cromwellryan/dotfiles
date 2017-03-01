@@ -1,4 +1,4 @@
-if [ -f ~/.profil ]; then
+if [ -f ~/.profile ]; then
   source ~/.profile
 fi
 
