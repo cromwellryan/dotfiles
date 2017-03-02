@@ -12,7 +12,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Let Vundle manage Vundle
-Plugin 'VundleVim/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Clean Code
 Plugin 'scrooloose/syntastic'
