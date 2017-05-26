@@ -130,15 +130,4 @@ alias d=docker
 alias dc=docker-compose
 alias dm=docker-machine
 
-############################
-# startup gpg-agent
-############################
-GPG_AGENT=$(which gpg-agent)
-GPG_TTY=`tty`
-export GPG_TTY
-
-if [ -f ${GPG_AGENT} ]; then
-    . ~/.bash_gpg
-fi
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
