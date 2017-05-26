@@ -55,7 +55,9 @@ Plugin 'ekalinin/Dockerfile.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bling/vim-airline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -164,7 +166,7 @@ set tabstop=2 shiftwidth=2 " tabs rendered as 2 spaces
 set expandtab " expand tabs to spaces (should this be filemode dependent?
 
 set ai "Auto indent
-set si "Smart indent
+"set si "Smart indent
 
 set nobackup
 set nowritebackup
