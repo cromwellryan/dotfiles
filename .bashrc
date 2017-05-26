@@ -51,6 +51,8 @@ alias :Q=kill-that-habit
 alias ll="ls -ahl"
 alias l="ls -l"
 
+alias vim=/usr/local/bin/vim
+
 # mostly tmuxinator, but others like it too.
 export EDITOR='vim'
 
