@@ -1,6 +1,3 @@
-## Todo
-
-* Move setup to rake tasks
 
 ## Setup - Mac (possibly Linux - not confirmed lately)
 
