@@ -19,6 +19,8 @@
 
   ghprs = "!f() { remote=$1; : ${remote:=$(git remote | grep '^origin\\|upstream$' | sort --reverse | head -1)}; if [ $remote ]; then git config --add remote.$remote.fetch +refs/pull/*/head:refs/remotes/${remote}/pr/*; echo \"added github PR refspec to fetch from ${remote}\" ; else echo 'no remote given nor upstream or origin remote'; fi; git fetch ${remote}; }; f"
 
+  url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"'
+
 [core]
   excludesfile = ~/.gitignore_global
   editor = /usr/local/bin/vim
