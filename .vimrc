@@ -144,6 +144,9 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
+" Close the scratch pane created when cycling autocompletions
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mattn/gist-vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
