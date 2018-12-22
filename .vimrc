@@ -349,8 +349,7 @@ set t_Co=256
 set noshowmode             " Airline gives mode
 
 syntax enable
-set background=dark
-colorscheme Tomorrow-Night
+colorscheme Tomorrow
 
 if exists('+colorcolumn')
   set colorcolumn=80
