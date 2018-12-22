@@ -1,4 +1,3 @@
-export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/share/npm/bin
 export PATH=$PATH:/bin
@@ -52,6 +51,12 @@ alias ll="ls -ahl"
 alias l="ls -l"
 
 alias vim=/usr/local/bin/vim
+
+##############
+# ANSIBLE
+##############
+alias play="ansible-playbook"
+alias vault="ansible-vault"
 
 # mostly tmuxinator, but others like it too.
 export EDITOR='vim'
