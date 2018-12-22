@@ -26,10 +26,6 @@ Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'xolox/vim-misc'
 
-" Dash integration
-Plugin 'rizzatti/funcoo.vim'
-Plugin 'rizzatti/dash.vim'
-
 " Ruby
 Plugin 'thoughtbot/vim-rspec'
 
