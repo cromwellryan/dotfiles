@@ -128,7 +128,6 @@ function clear-dns-cache() {
 }
 
 export TERM="xterm-256color"
-export PATH=/usr/local/bin:$PATH
 
 ############################
 # Docker
