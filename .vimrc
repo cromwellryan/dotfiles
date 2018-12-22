@@ -60,9 +60,11 @@ let g:airline_powerline_fonts = 1
 " Git & Github
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
+map <Leader>go :Gbrowse<CR>
 
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
