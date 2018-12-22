@@ -111,16 +111,17 @@ nnoremap vlc :call VimuxRunLastCommand()<CR>
 nmap vmp :VimuxPromptCommand<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" jgdavey/vim-turbux
+" janko-m/vim-test
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'jgdavey/vim-turbux'
+Plugin 'janko-m/vim-test'
 
-let g:no_turbux_mappings = 1
-map <leader>t <Plug>SendTestToTmux
-map <leader>s <Plug>SendFocusedTestToTmux
-let g:turbux_command_rspec = 'bundle exec spring rspec'
-let g:turbux_command_cucumber = 'bundle exec spring cucumber'
-let g:turbux_command_teaspoon = 'jasmine-node'
+let test#strategy = "vimux"
+
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " christoomey/vim-tmux-navigator
