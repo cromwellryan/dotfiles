@@ -97,6 +97,8 @@ alias gpp='git-poooosh'
 ############################
 
 alias gpg=gpg2
+export GPG_TTY=$(tty) # Needed for gpg2
+
 function mcd() {
   mkdir $1
   cd $1
