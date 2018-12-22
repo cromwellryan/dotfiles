@@ -27,8 +27,6 @@
 [commit]
   template = ~/.gitmessage.txt
   gpgsign = true
-[rerere]
-	enabled = 1
 [credential]
 	helper = osxkeychain
 [github]
