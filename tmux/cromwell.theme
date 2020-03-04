@@ -1,0 +1,28 @@
+################################################################
+# Theme: Personal theme based on tomorrow
+# https://github.com/connrs/dotfiles/blob/master/tmux/tomorrow-night.tmux
+################################################################
+## set status bar
+set -g status-style bg="#ffffff",fg="#4d4d4c"
+
+## highlight active window
+setw -g window-status-current-style bg="#ffffff",fg="#4d4d4c"
+
+## highlight activity in status bar
+setw -g window-status-activity-style bg="#4d4d4c",fg="#3e999f"
+
+## pane border and colors
+set -g pane-active-border-style bg=default,fg="#8e908c"
+set -g pane-border-style bg=default,fg="#d6d6d6"
+
+set -g clock-mode-colour "#3e999f"
+set -g clock-mode-style 24
+
+set -g message-style bg="#3e999f",fg="#ffffff"
+set -g message-command-style bg="#3e999f",fg="#ffffff"
+
+set -g mode-style bg="#3e999f",fg="#ffffff"
+
+set -g status-left '#[fg="#4d4d4c"]⚡️'
+set -g status-right '#[fg="#4d4d4c"]#S'
+set -g status-justify "centre"
