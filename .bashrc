@@ -87,6 +87,7 @@ alias branch="git symbolic-ref --short HEAD 2> /dev/null"
 alias cbranch="git symbolic-ref --short HEAD 2> /dev/null | tr -d '\n' | pbcopy"
 
 alias gd="git diff"
+alias gdn="git diff --name-only"
 alias grb="git rebase"
 alias gcp="git cherry-pick"
 
