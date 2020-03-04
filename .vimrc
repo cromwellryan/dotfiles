@@ -25,6 +25,7 @@ Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 " Nav
 Plugin 'scrooloose/nerdtree'
 Plugin 'xolox/vim-misc'
+Plugin 'tpope/vim-unimpaired'
 
 " Ruby
 Plugin 'thoughtbot/vim-rspec'
