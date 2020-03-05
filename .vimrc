@@ -14,9 +14,6 @@ call vundle#begin()
 " Let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
-" Clean Code
-Plugin 'scrooloose/syntastic'
-
 Plugin 'tpope/vim-surround'
 
 " UI
@@ -349,7 +346,6 @@ au BufNewFile,BufRead *.apib set filetype=apiblueprint
 set t_Co=256
 set noshowmode             " Airline gives mode
 
-syntax enable
 colorscheme Tomorrow
 
 if exists('+colorcolumn')
@@ -357,4 +353,5 @@ if exists('+colorcolumn')
 endif
 
 filetype plugin indent on
+syntax enable
 set exrc
