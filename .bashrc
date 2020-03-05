@@ -85,6 +85,7 @@ alias gh="git hist"
 alias gfuckit="git reset --hard HEAD@{upstream}"
 alias branch="git symbolic-ref --short HEAD 2> /dev/null"
 alias cbranch="git symbolic-ref --short HEAD 2> /dev/null | tr -d '\n' | pbcopy"
+alias clean-branches="git branch --merged | grep -v master | xargs git branch -d"
 
 alias gd="git diff"
 alias gdn="git diff --name-only"
