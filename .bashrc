@@ -137,5 +137,11 @@ export TERM="xterm-256color"
 alias d=docker
 alias dc=docker-compose
 alias dm=docker-machine
+alias dsh=docker-shell
+
+# Shell into a running docker container with dsh <CONTAINER_ID>
+function docker-shell(){
+  docker exec -it "$@" /bin/bash
+}
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
