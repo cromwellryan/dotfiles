@@ -48,6 +48,11 @@ brew install --cask \
   zoom \
   docker
 
+echo "***********************"
+echo "*   Setup oh-my-zsh   *"
+echo "***********************"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 echo "************************"
 echo "*   Setup Dotfiles     *"
 echo "************************"
