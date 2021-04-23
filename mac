@@ -48,12 +48,22 @@ brew install --cask \
   zoom \
   docker
 
+echo "************************"
+echo "*   Setup Dotfiles     *"
+echo "************************"
 git clone git@github.com:cromwellryan/dotfiles.git ~/dotfiles
 
-or link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh; do
+or link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh .vim; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' exists"
   else
     ln -s "$PWD/$link" $HOME
   fi
 done
+
+echo "****************
+echo "*   Setup Vim  *"
+echo "****************
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim -c 
+
