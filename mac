@@ -18,11 +18,10 @@ brew install \
   git \
   git-extras \
   git-secrets \
-  heroku \
   imagemagick \
   iterm2 \
   jq \
-  NVM \
+  nvm \
   reattach-to-user-namespace \
   shellcheck \
   terraform \
@@ -40,6 +39,7 @@ echo "************************"
 echo "*   Installing Casks   *"
 echo "************************"
 brew install --cask \
+  1password \
   iterm2 \
   microsoft-teams \
   nvalt \
