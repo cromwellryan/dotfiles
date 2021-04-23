@@ -52,6 +52,7 @@ echo "***********************"
 echo "*   Setup oh-my-zsh   *"
 echo "***********************"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/cromwellryan/git-poooosh.git "$HOME/.oh-my-zsh/custom/plugins/git-poooosh"
 
 echo "************************"
 echo "*   Setup Dotfiles     *"
@@ -60,6 +61,9 @@ git clone https://github.com/cromwellryan/dotfiles.git ~/dotfiles
 
 cd ~/dotfiles
 git checkout mac-setup
+
+ln -s "$PWD/cromwell.zsh-theme" "$HOME/.oh-my-zsh/themes/cromwell.zsh-theme"
+
 for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh .vim; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' exists"
