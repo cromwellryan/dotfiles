@@ -39,6 +39,7 @@ echo "*   Installing Casks   *"
 echo "************************"
 brew install --cask \
   1password \
+  bartender \
   iterm2 \
   microsoft-teams \
   nvalt \
