@@ -53,11 +53,12 @@ echo "*   Setup Dotfiles     *"
 echo "************************"
 git clone git@github.com:cromwellryan/dotfiles.git ~/dotfiles
 
-or link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh .vim; do
+cd ~/dotfiles
+for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh .vim; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' exists"
   else
-    ln -s "$PWD/$link" $HOME
+    ln -s "$PWD/$link" "$HOME/$link"
   fi
 done
 
