@@ -282,6 +282,12 @@ function! MapCR()
 endfunction
 call MapCR()
 
+" Show hex colors in their actual color"
+Plugin 'chrisbra/Colorizer'
+let g:colorizer_auto_color = 1
+let g:colorizer_auto_filetype='css,html,js,sh'
+
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ApiBlueprint support
