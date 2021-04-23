@@ -19,7 +19,6 @@ brew install \
   git-extras \
   git-secrets \
   imagemagick \
-  iterm2 \
   jq \
   nvm \
   reattach-to-user-namespace \
