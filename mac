@@ -1,0 +1,52 @@
+#!/bin/bash
+
+echo "Congrats on your new Mac! Let's get you setup, Ryan"
+
+echo "***********************"
+echo "*   Installing Brew   *"
+echo "***********************"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "**************************"
+echo "*   Installing Formula   *"
+echo "**************************"
+
+brew install \
+  awscli \
+  azure-cli \
+  caddy \
+  git \
+  git-extras \
+  git-secrets \
+  heroku \
+  imagemagick \
+  iterm2 \
+  jq \
+  NVM \
+  reattach-to-user-namespace \
+  shellcheck \
+  terraform \
+  the_silver_searcher \
+  tmux \
+  vim \
+  zsh
+
+echo "***************************"
+echo "*   Installing Heroku CLI *"
+echo "**************************"
+brew tap heroku/brew && brew install heroku
+
+echo "************************"
+echo "*   Installing Casks   *"
+echo "************************"
+brew install --cask \
+  iterm2 \
+  microsoft-teams \
+  nvalt \
+  obs \
+  recordit \
+  sequel-pro \
+  zoom \
+  docker
+
+
