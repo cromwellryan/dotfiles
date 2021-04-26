@@ -42,6 +42,7 @@ brew install --cask \
   1password \
   alfred \
   bartender \
+  harvest \
   iterm2 \
   microsoft-teams \
   nvalt \
