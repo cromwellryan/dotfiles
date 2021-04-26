@@ -60,7 +60,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 echo "************************"
 echo "*   Setup Dotfiles     *"
 echo "************************"
-git clone https://github.com/cromwellryan/dotfiles.git ~/dotfiles
+if [ ! -d ~/dotfiles ]; then
+  git clone https://github.com/cromwellryan/dotfiles.git ~/dotfiles
+fi
 
 cd ~/dotfiles
 
@@ -74,17 +76,17 @@ for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .git
   fi
 done
 
-echo "*****************
+echo "*****************"
 echo "*   Setup NVM   *"
-echo "*****************
+echo "*****************"
 NODE_VERSION=14 PROFILE=/dev/null sh -c "$(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-echo "****************
+echo "****************"
 echo "*   Setup Vim  *"
-echo "****************
+echo "****************"
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
