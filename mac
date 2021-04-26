@@ -15,6 +15,7 @@ brew install \
   awscli \
   azure-cli \
   caddy \
+  cmake \
   git \
   git-extras \
   git-secrets \
@@ -89,4 +90,7 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 fi
 
 vim -c "BundleInstall" -c ":qa"
+
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --js-completer --ts-completer --system-boost
 
