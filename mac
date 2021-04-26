@@ -96,3 +96,5 @@ vim -c "BundleInstall" -c ":qa"
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --js-completer --ts-completer --system-boost
 
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
