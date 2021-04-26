@@ -40,6 +40,7 @@ echo "*   Installing Casks   *"
 echo "************************"
 brew install --cask \
   1password \
+  alfred \
   bartender \
   iterm2 \
   microsoft-teams \
