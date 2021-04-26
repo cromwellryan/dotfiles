@@ -74,6 +74,14 @@ for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .git
   fi
 done
 
+echo "*****************
+echo "*   Setup NVM   *"
+echo "*****************
+NODE_VERSION=14 PROFILE=/dev/null sh -c "$(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 echo "****************
 echo "*   Setup Vim  *"
 echo "****************
