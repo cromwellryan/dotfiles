@@ -68,7 +68,7 @@ cd ~/dotfiles
 
 ln -s "$PWD/cromwell.zsh-theme" "$HOME/.oh-my-zsh/themes/cromwell.zsh-theme"
 
-for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh .vim; do
+for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tern-project .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh .vim; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' exists"
   else
