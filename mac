@@ -28,6 +28,7 @@ brew install \
   the_silver_searcher \
   tmux \
   vim \
+  watch \
   zsh
 
 echo "***************************"
