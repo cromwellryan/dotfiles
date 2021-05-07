@@ -43,6 +43,7 @@ brew install --cask \
   1password \
   alfred \
   bartender \
+  docker \
   harvest \
   iterm2 \
   microsoft-teams \
@@ -50,8 +51,8 @@ brew install --cask \
   obs \
   recordit \
   sequel-pro \
-  zoom \
-  docker
+  xbar \
+  zoom
 
 echo "***********************"
 echo "*   Setup oh-my-zsh   *"
@@ -70,6 +71,9 @@ fi
 cd ~/dotfiles
 
 ln -s "$PWD/cromwell.zsh-theme" "$HOME/.oh-my-zsh/themes/cromwell.zsh-theme"
+
+mkdir -p "~/Library/Application Support/xbar/"
+ln -sf "$PWD/dotfiles" "~/Library/Application Support/xbar/plugins"
 
 for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .gitmessage.txt .profile .tern-project .tmux.conf .vimrc .zshenv .zshrc tmuxinator.zsh .vim; do
   if [ -L "$HOME/$link" ]; then
