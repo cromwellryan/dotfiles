@@ -65,7 +65,7 @@ let g:airline_powerline_fonts = 1
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
 
-map <Leader>gs :Gstatus<CR>
+map <Leader>gs :Git<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>go :Gbrowse<CR>
 
