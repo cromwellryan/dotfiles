@@ -66,8 +66,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
 
 map <Leader>gs :Git<CR>
-map <Leader>gc :Gcommit<CR>
-map <Leader>go :Gbrowse<CR>
+map <Leader>gc :Git commit<CR>
+map <Leader>go :GBrowse<CR>
 
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
