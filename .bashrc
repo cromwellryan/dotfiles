@@ -1,11 +1,7 @@
-export PATH=$PATH:/usr/local/sbin
-export PATH=$PATH:/usr/local/share/npm/bin
-export PATH=$PATH:/bin
-export PATH=$PATH:/usr/sbin
-export PATH=$PATH:/sbin
+############################
+# Make it so that I can execute binaries in my local node_modules path
+############################
 export PATH=$PATH:./node_modules/.bin
-
-export NODE_PATH="/usr/local/lib/node_modules"
 
 ############################
 # colors for output
