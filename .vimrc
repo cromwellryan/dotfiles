@@ -188,6 +188,7 @@ set ai "Auto indent
 set nobackup
 set nowritebackup
 set noswapfile
+set nowrap
 
 " make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
