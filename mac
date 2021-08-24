@@ -34,6 +34,13 @@ brew install \
   watch \
   zsh
 
+echo "*****************************"
+echo "*   Installing Sparkbox bins "
+echo "*****************************"
+brew tap sparkbox/brew
+brew install sb
+
+
 echo "***************************"
 echo "*   Installing Heroku CLI *"
 echo "**************************"
