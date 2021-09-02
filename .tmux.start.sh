@@ -1,4 +1,5 @@
 #!/bin/sh 
+
 export PATH=$PATH:~/.local/bin:/usr/local/bin
 [ "$TMUX" == "" ] || exit 0 
 PS3="Please choose your session: "
