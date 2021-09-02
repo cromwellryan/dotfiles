@@ -2,7 +2,12 @@
 export PATH=$PATH:~/.local/bin:/usr/local/bin
 [ "$TMUX" == "" ] || exit 0 
 PS3="Please choose your session: "
-options=($(tmux list-sessions -F "#S") "NEW SESSION" "ZSH")
+
+sessions=($(tmux list-sessions -F "#S" 2>/dev/null))
+other=("NEW SESSION" "ZSH")
+
+options=("${sessions[@]}" "${other[@]}")
+
 echo "Available sessions"
 echo "------------------"
 echo " "
