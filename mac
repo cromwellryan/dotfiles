@@ -25,6 +25,7 @@ brew install \
   imagemagick \
   jq \
   nvm \
+  python \
   reattach-to-user-namespace \
   shellcheck \
   terraform \
