@@ -35,13 +35,6 @@ brew install \
   watch \
   zsh
 
-echo "*****************************"
-echo "*   Installing Sparkbox bins "
-echo "*****************************"
-brew tap sparkbox/brew
-brew install sb
-
-
 echo "***************************"
 echo "*   Installing Heroku CLI *"
 echo "**************************"
@@ -55,15 +48,14 @@ brew install --cask \
   alfred \
   bartender \
   docker \
-  harvest \
+  gpg-suite-no-mail \
   iterm2 \
-  microsoft-teams \
   nvalt \
   obs \
   recordit \
+  rocket \
   sequel-pro \
-  xbar \
-  zoom
+  xbar
 
 echo "***********************"
 echo "*   Setup oh-my-zsh   *"
