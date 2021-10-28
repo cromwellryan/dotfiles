@@ -73,7 +73,7 @@ fi
 
 cd ~/dotfiles
 
-ln -s "$PWD/cromwell.zsh-theme" "$HOME/.oh-my-zsh/themes/cromwell.zsh-theme"
+ln -sf "$PWD/cromwell.zsh-theme" "$HOME/.oh-my-zsh/themes/cromwell.zsh-theme"
 
 mkdir -p "~/Library/Application Support/xbar/"
 ln -sf "$PWD/dotfiles" "~/Library/Application Support/xbar/plugins"
@@ -82,7 +82,7 @@ for link in .agignore .bash_gpg .bash_profile .bashrc .gitconfig .gitignore .git
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' exists"
   else
-    ln -s "$PWD/$link" "$HOME/$link"
+    ln -sf "$PWD/$link" "$HOME/$link"
   fi
 done
 
