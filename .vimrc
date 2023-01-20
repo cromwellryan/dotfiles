@@ -157,10 +157,13 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
 " Disable auto showing documentation
-let g:ycm_auto_hover='' 
+let g:ycm_auto_hover=''
 
 " Close the scratch pane created when cycling autocompletions
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mattn/gist-vim
