@@ -1,7 +1,7 @@
-#!/bin/sh 
+#!/bin/sh
 
 export PATH=$PATH:~/.local/bin:/usr/local/bin
-[ "$TMUX" == "" ] || exit 0 
+[ "$TMUX" == "" ] || exit 0
 PS3="Please choose your session: "
 
 sessions=($(tmux list-sessions -F "#S" 2>/dev/null))
@@ -23,7 +23,7 @@ do
         "ZSH")
             zsh
             break;;
-        *) 
+        *)
             tmux attach-session -t $opt 
             break
             ;; 
