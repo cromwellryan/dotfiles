@@ -52,3 +52,5 @@ for file in ~/.local/*.sh; do
 done
 
 export PATH="$HOME/.bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
