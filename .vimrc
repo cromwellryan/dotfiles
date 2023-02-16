@@ -381,10 +381,24 @@ set exrc
 
 
 if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
+  let g:airline_symbols = {}
 endif
 let g:airline_symbols.linenr = " "
 let g:airline_symbols.colnr = "℅ "
 let g:airline_symbols.maxlinenr = ''
 let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr', ' ', 'colnr' ])
 
+
+au BufRead,BufNewFile *.soql setfiletype soql
+
+
+set completeopt=longest,menuone
+
+let g:ycm_language_server =
+      \ [
+      \   {
+      \     'name': 'soql',
+      \     'cmdline': [ '/Users/rcromwell/projects/soql-language-server/server.sh' ],
+      \     'filetypes': [ 'soql' ]
+      \   }
+      \ ]
