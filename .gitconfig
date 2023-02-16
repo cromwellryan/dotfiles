@@ -38,3 +38,5 @@
 [pager]
 	branch = false
 	tag = false
+[init]
+	defaultBranch = main
