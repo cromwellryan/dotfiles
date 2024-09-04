@@ -393,12 +393,3 @@ au BufRead,BufNewFile *.soql setfiletype soql
 
 
 set completeopt=longest,menuone
-
-let g:ycm_language_server =
-      \ [
-      \   {
-      \     'name': 'soql',
-      \     'cmdline': [ '/Users/rcromwell/projects/soql-language-server/server.sh' ],
-      \     'filetypes': [ 'soql' ]
-      \   }
-      \ ]
