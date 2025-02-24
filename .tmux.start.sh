@@ -1,12 +1,14 @@
 #!/bin/sh
 
-export PATH=$PATH:~/.local/bin:/usr/local/bin
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# quit if already in tmux session
 [ "$TMUX" == "" ] || exit 0
+
 PS3="Please choose your session: "
 
 sessions=($(tmux list-sessions -F "#S" 2>/dev/null))
 other=("NEW SESSION" "ZSH")
-
 options=("${sessions[@]}" "${other[@]}")
 
 echo "Available sessions"
