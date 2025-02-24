@@ -31,7 +31,6 @@ function kill-that-habit() {
 
 alias updatepow="curl get.pow.cx | sh"
 alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p 7488"
-alias pg-start="postgres -D /usr/local/var/postgres"
 
 alias dot="cd ~/dotfiles"
 alias ebash="vim ~/dotfiles/.bashrc"
