@@ -35,7 +35,7 @@ alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p
 alias dot="cd ~/dotfiles"
 alias ebash="vim ~/dotfiles/.bashrc"
 alias evim="vim ~/dotfiles/.vimrc"
-alias v="vim"
+alias v="$(which vi)"
 alias cpath="pwd | tr -d '\n' | pbcopy"
 alias p="cd ~/projects"
 alias xx="exit"
@@ -45,7 +45,6 @@ alias :Q=kill-that-habit
 alias ll="ls -ahl"
 alias l="ls -l"
 
-alias vim=/usr/local/bin/vim
 
 ##############
 # ANSIBLE

@@ -23,7 +23,7 @@
 
 [core]
   excludesfile = ~/.gitignore
-  editor = /usr/local/bin/vim
+  editor = vim
 [commit]
   template = ~/.gitmessage.txt
   gpgsign = true
