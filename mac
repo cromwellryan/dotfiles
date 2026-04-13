@@ -55,6 +55,7 @@ brew install --cask \
   recordit \
   rocket \
   sequel-pro \
+  visual-studio-code \
   xbar
 
 echo "***********************"
