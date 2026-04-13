@@ -7,7 +7,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 PS3="Please choose your session: "
 
-sessions=($(tmux list-sessions -F "#S" 2>/dev/null))
+IFS=$'\n' sessions=($(tmux list-sessions -F "#S" 2>/dev/null))
 other=("NEW SESSION" "ZSH")
 options=("${sessions[@]}" "${other[@]}")
 
