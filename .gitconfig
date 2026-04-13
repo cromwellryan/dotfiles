@@ -1,7 +1,9 @@
 [user]
   name = Ryan Cromwell
-  email = rcromwell@salesforce.com
-  signingkey = B745694D
+  # email and signingkey in ~/dotfiles/.git-local
+
+[include]
+  path = ~/dotfiles/.git-local
 
 [alias]
   st = status
