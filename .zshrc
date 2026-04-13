@@ -37,7 +37,6 @@ plugins=(git-poooosh zsh-autosuggestions minikube kubectl)
 source $ZSH/oh-my-zsh.sh
 
 source ~/tmuxinator.zsh
-source ~/.bashrc
 source ~/projects/secrets/.auto-secrets.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
@@ -56,3 +55,6 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+source ~/.bashrc
+export PATH="$HOME/.local/bin:$PATH"
