@@ -1,0 +1,150 @@
+# Ghostty Configuration
+# Optimized for tmux usage with performance and simplicity
+# See: man ghostty or https://ghostty.org/docs
+
+##############################################################################
+# Font Configuration
+##############################################################################
+
+font-family = "SF Mono"
+font-size = 14
+
+# Font features
+font-feature = -calt  # Disable contextual alternates if desired
+# font-feature = +liga  # Enable ligatures (uncomment if you want them)
+
+##############################################################################
+# Theme and Appearance
+##############################################################################
+
+# Tomorrow theme (light) - matches your tmux cromwell theme aesthetic
+theme = tomorrow
+
+# Alternative themes to try:
+# theme = github-light
+# theme = tomorrow-night  # for dark mode
+# theme = solarized-light
+
+# Window appearance
+window-padding-x = 4
+window-padding-y = 4
+# Use native macOS window decorations
+window-decoration = true
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+##############################################################################
+# Terminal Behavior
+##############################################################################
+
+# Shell - Run tmux session selector on startup (like iTerm2)
+command = /Users/rcromwell/dotfiles/.tmux.start.sh
+
+# Working directory
+working-directory = "~"
+
+# Scrollback
+scrollback-limit = 10000
+
+# Shell integration (auto-detects zsh)
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+##############################################################################
+# Performance
+##############################################################################
+
+# GPU acceleration is automatic on macOS (Metal)
+# No manual configuration needed
+
+##############################################################################
+# tmux-Friendly Settings
+##############################################################################
+
+# IMPORTANT: Don't override common tmux keybindings
+# Let tmux handle C-d prefix and all its bindings
+# Ghostty is just the renderer - tmux manages splits/sessions
+
+# Copy/paste uses system clipboard (tmux will handle its own buffers)
+clipboard-read = allow
+clipboard-write = allow
+# tmux handles paste protection, so disable it
+clipboard-paste-protection = false
+
+# Selection
+selection-background = #d6d6d6
+selection-foreground = #4d4d4c
+
+##############################################################################
+# Window/Tab Management (Optional - you'll use tmux instead)
+##############################################################################
+
+# These are here if you want to use Ghostty tabs for different projects
+# while running tmux inside each tab
+
+# Auto-restore windows on restart
+window-save-state = always
+window-theme = ghostty
+
+##############################################################################
+# Advanced
+##############################################################################
+
+# Initial window size
+window-height = 40
+window-width = 140
+
+# Quit behavior
+quit-after-last-window-closed = false
+# tmux handles unsaved work warnings
+confirm-close-surface = false
+
+# macOS specific
+macos-non-native-fullscreen = false
+macos-titlebar-style = native
+# Important for your Alt+hjkl tmux resizing
+macos-option-as-alt = true
+
+##############################################################################
+# Keybindings
+##############################################################################
+
+# Minimal Ghostty keybindings - let tmux handle everything else
+# Only bind Ghostty-specific actions that don't conflict with tmux
+
+# Reload config
+keybind = super+comma=reload_config
+
+# New window (not tab, not split - a whole new Ghostty window)
+keybind = super+n=new_window
+
+# New tab (if you want to use Ghostty tabs for different projects)
+keybind = super+t=new_tab
+keybind = super+w=close_tab
+keybind = super+shift+left_bracket=previous_tab
+keybind = super+shift+right_bracket=next_tab
+
+# Font size adjustment
+keybind = super+plus=increase_font_size:1
+keybind = super+minus=decrease_font_size:1
+keybind = super+zero=reset_font_size
+
+# Ghostty inspector (for debugging)
+keybind = super+shift+i=inspector:toggle
+
+##############################################################################
+# Notes for tmux Users
+##############################################################################
+
+# All your tmux keybindings work as-is:
+# - C-d prefix (your custom prefix)
+# - C-d j/l for splits
+# - C-h/j/k/l for vim-aware navigation
+# - Alt+h/j/k/l for resizing
+# - C-1/2/3/4 for pane selection
+# - All tmuxinator configurations
+#
+# Ghostty is just rendering the output 100x faster with GPU acceleration.
+# tmux handles all the multiplexing, sessions, and layouts.
