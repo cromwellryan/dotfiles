@@ -18,7 +18,7 @@ font-feature = -calt  # Disable contextual alternates if desired
 ##############################################################################
 
 # Tomorrow theme (light) - matches your tmux cromwell theme aesthetic
-theme = tomorrow
+theme = Catppuccin Mocha
 
 # Alternative themes to try:
 # theme = github-light

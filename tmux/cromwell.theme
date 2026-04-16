@@ -1,28 +1,28 @@
 ################################################################
-# Theme: Personal theme based on tomorrow
-# https://github.com/connrs/dotfiles/blob/master/tmux/tomorrow-night.tmux
+# Theme: Personal theme based on Catppuccin Mocha
+# Matches Ghostty's Catppuccin Mocha theme
 ################################################################
 ## set status bar
-set -g status-style bg="#ffffff",fg="#4d4d4c"
+set -g status-style bg="#1e1e2e",fg="#cdd6f4"
 
 ## highlight active window
-setw -g window-status-current-style bg="#ffffff",fg="#4d4d4c"
+setw -g window-status-current-style bg="#313244",fg="#89b4fa"
 
 ## highlight activity in status bar
-setw -g window-status-activity-style bg="#4d4d4c",fg="#3e999f"
+setw -g window-status-activity-style bg="#45475a",fg="#fab387"
 
 ## pane border and colors
-set -g pane-active-border-style bg=default,fg="#8e908c"
-set -g pane-border-style bg=default,fg="#d6d6d6"
+set -g pane-active-border-style bg=default,fg="#89b4fa"
+set -g pane-border-style bg=default,fg="#45475a"
 
-set -g clock-mode-colour "#3e999f"
+set -g clock-mode-colour "#89dceb"
 set -g clock-mode-style 24
 
-set -g message-style bg="#3e999f",fg="#ffffff"
-set -g message-command-style bg="#3e999f",fg="#ffffff"
+set -g message-style bg="#89b4fa",fg="#1e1e2e"
+set -g message-command-style bg="#89b4fa",fg="#1e1e2e"
 
-set -g mode-style bg="#3e999f",fg="#ffffff"
+set -g mode-style bg="#89b4fa",fg="#1e1e2e"
 
-set -g status-left '#[fg="#4d4d4c"]⚡️'
-set -g status-right '#[fg="#4d4d4c"]#S'
+set -g status-left '#[fg="#cdd6f4"]⚡️'
+set -g status-right '#[fg="#cdd6f4"]#S'
 set -g status-justify "centre"

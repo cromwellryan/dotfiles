@@ -17,7 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
 
 " UI
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+" Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Nav
 Plugin 'scrooloose/nerdtree'
@@ -54,10 +55,10 @@ Plugin 'ekalinin/Dockerfile.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bling/vim-airline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-let g:airline_theme='tomorrow'
-let g:airline_powerline_fonts = 1
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+" let g:airline_theme='tomorrow'
+" let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git & Github
@@ -369,7 +370,7 @@ au BufNewFile,BufRead *.apib set filetype=apiblueprint
 set t_Co=256
 set noshowmode             " Airline gives mode
 
-colorscheme Tomorrow
+" colorscheme Tomorrow
 
 if exists('+colorcolumn')
   set colorcolumn=80
@@ -380,13 +381,13 @@ syntax enable
 set exrc
 
 
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-let g:airline_symbols.linenr = " "
-let g:airline_symbols.colnr = "℅ "
-let g:airline_symbols.maxlinenr = ''
-let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr', ' ', 'colnr' ])
+" if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+" endif
+" let g:airline_symbols.linenr = " "
+" let g:airline_symbols.colnr = "℅ "
+" let g:airline_symbols.maxlinenr = ''
+" let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr', ' ', 'colnr' ])
 
 
 au BufRead,BufNewFile *.soql setfiletype soql
