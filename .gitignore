@@ -7,3 +7,6 @@ npm-debug.log
 .vimrc
 .vim/bundle
 .git-local
+
+# Machine-specific secrets and config
+.local/
