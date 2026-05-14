@@ -23,6 +23,7 @@ set -g message-command-style bg="#89b4fa",fg="#1e1e2e"
 
 set -g mode-style bg="#89b4fa",fg="#1e1e2e"
 
-set -g status-left '#[fg="#cdd6f4"]⚡️'
+set -g status-left '#[fg="#cdd6f4"]⚡️ #(~/dotfiles/tmux/status-repo-branch "#{pane_current_path}")'
+set -g status-left-length 80
 set -g status-right '#[fg="#cdd6f4"]#S'
 set -g status-justify "centre"

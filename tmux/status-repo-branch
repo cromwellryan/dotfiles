@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Print "repo branch" for the given path (default: $PWD).
+# Outputs nothing when not inside a git repo.
+set -u
+
+path="${1:-$PWD}"
+[ -d "$path" ] || exit 0
+
+repo=$(git -C "$path" rev-parse --show-toplevel 2>/dev/null) || exit 0
+[ -n "$repo" ] || exit 0
+
+branch=$(git -C "$path" symbolic-ref --short HEAD 2>/dev/null \
+  || git -C "$path" rev-parse --short HEAD 2>/dev/null)
+
+printf '%s  %s' "$(basename "$repo")" "$branch"
